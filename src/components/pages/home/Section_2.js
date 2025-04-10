@@ -1,6 +1,7 @@
 // components/Section_2.js
 import Image from "next/image";
 import SecurityTraining from "@/assets/img/SecurityTraining.png";
+import SecurityConsultancySolutions from "@/assets/img/SecurityConsultancySolutions.png";
 
 export default function Section_2() {
   return (
@@ -70,7 +71,7 @@ export default function Section_2() {
               <Image
                 alt="Security Training"
                 className="rounded-lg transition-all duration-300 ease-in-out group-hover:brightness-50"
-                src={SecurityTraining}
+                src={SecurityConsultancySolutions}
                 width={400}
                 height={300}
               />

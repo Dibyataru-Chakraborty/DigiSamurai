@@ -13,8 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Digi Samurai",
-  description: "Digi Samurai is leading technology company with global reach, our enthusiasm for innovation and perfection drives us to be leaders in cybersecurity and compliance solutions. Our team of professionals is committed to establishing new benchmarks in digital protection. To secure your assets and guarantee regulatory compliance, we employ state-of-the-art technologies and sophisticated procedures.",
+  title: "About Us | Digi Samurai",
 };
 
 export default function RootLayout({ children }) {
