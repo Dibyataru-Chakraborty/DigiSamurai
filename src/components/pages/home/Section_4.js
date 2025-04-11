@@ -3,10 +3,10 @@
 export default function Section_4() {
   return (
     <section className="py-16 relative  bg-gray-100">
-      <div className="container mx-auto text-center items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8 mx-16" style={{
+      <div className="container mx-auto text-center items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8" style={{
         fontFamily: "Josefin Sans",
       }}>
-        <h2 className="text-5xl font-bold text-red-600 bg-clip-text text-transparent"
+        <h2 className="text-5xl font-bold bg-clip-text text-transparent"
           style={{
             backgroundImage: "linear-gradient(90deg, #FFCCCC 0%, #FF0005 35%, #800000 50%, #000000 100%)",
           }}>
