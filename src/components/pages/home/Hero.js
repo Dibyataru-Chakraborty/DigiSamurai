@@ -11,24 +11,23 @@ export default function Hero() {
       className="relative bg-cover bg-center h-screen flex items-center justify-center"
       style={{ backgroundImage: `url(${hero.src})` }}
     >
-      <div
-        className="absolute inset-0 opacity-35"
-        style={{ backgroundColor: "#7B4C4C" }}
-      />
 
       <div className="relative container mx-auto h-full flex flex-col justify-center items-center text-center text-white px-4 sm:px-6">
         {/* Main Heading */}
-        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold font-[Josefin Sans]">
-          Empowering businesses with cutting-edge security, compliance, and
-          forensic solutions
-        </h1>
+        <div className="text-left">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold font-[Josefin Sans]">
+            Empowering businesses with cutting-edge security, compliance, and
+            forensic solutions
+          </h1>
 
-        {/* Subtext */}
-        <p className="mt-6 text-sm sm:text-lg md:text-2xl lg:text-2xl xl:text-3xl font-[Josefin_Sans] max-w-3xl">
-          Committed to proactively mitigating cyber threats, ensuring data
-          integrity, and fostering a security-first culture through innovation,
-          education and ethical practices.
-        </p>
+          {/* Subtext */}
+          <p className="mt-6 text-sm sm:text-lg md:text-2xl lg:text-2xl xl:text-3xl font-[Josefin_Sans] max-w-3xl">
+            Committed to proactively mitigating cyber threats, ensuring data
+            integrity, and fostering a security-first culture through innovation,
+            education and ethical practices.
+          </p>
+        </div>
+
 
         {/* Certification section pinned to bottom */}
         <div className="absolute bottom-4 left-0 right-0 w-full flex flex-col items-center px-4 sm:px-8">
