@@ -44,3 +44,12 @@ body {
 .card-shadow {
   box-shadow: 0px 2.5px 25px var(--primary);
 }
+
+/* In your global CSS file */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #f35153;
+  -webkit-text-fill-color: transparent;
+}
+

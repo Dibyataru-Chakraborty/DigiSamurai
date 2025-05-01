@@ -26,8 +26,11 @@ export default function Section_1() {
               />
             </div>
           </div>
-          <div className="w-full lg:w-3/4 pl-0 lg:pl-4 text-center lg:text-right font-[Jura]">
-            <p className="mt-4 text-xl lg:text-2xl xl:text-4xl">
+          <div className="w-full lg:w-3/4 pl-0 lg:pl-4 text-center lg:text-right">
+            <p className="mt-4 text-4xl lg:text-6xl xl:text-8xl text-center" style={{color: "#7B4C4C", fontFamily: "Josefin Sans"}}>
+              Secure. Protect. Thrive.
+            </p>
+            <p className="mt-4 text-xl lg:text-2xl xl:text-3xl font-[Jura]">
               Digi Samurai, established in 2023, operates across all 360 domains
               of cyber and information security. We provide comprehensive
               security solutions and have successfully partnered with numerous

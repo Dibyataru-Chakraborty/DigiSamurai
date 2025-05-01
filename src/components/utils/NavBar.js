@@ -1,7 +1,7 @@
 "use client";
 
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { IconHome, IconDeviceDesktopCode , IconMail, IconInfoSquareRounded, IconLibraryPhoto } from "@tabler/icons-react";
+import { IconHome, IconDeviceDesktopCode , IconMail, IconInfoSquareRounded, IconLibraryPhoto, IconBookmark } from "@tabler/icons-react";
 import digisamurai from "@/assets/img/DigiSamurai.png";
 
 const navItems = [
@@ -35,6 +35,10 @@ const navItems = [
     link: "/contact",
     icon: <IconMail />,
   },
+  { name: "Book Demo", 
+    link: "/contact", 
+    icon: <IconBookmark /> 
+  }
 ];
 
 export default function NavBar() {

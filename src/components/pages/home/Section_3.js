@@ -55,7 +55,7 @@ export default function Section_3() {
               <div className="w-full h-[3px] mt-8" style={{ backgroundColor: '#997677' }}></div>
               <div className="flex flex-col lg:flex-row mt-8 space-y-4 lg:space-y-0 lg:space-x-8">
                 <div className="text-left">
-                  <p className="text-2xl text-gray-600">{item.number}</p>
+                  <p className="text-6xl" style={{color:"#AE9191"}}>{item.number}</p>
                 </div>
                 <div className="text-left max-w-md">
                   <p className="text-base text-gray-600">

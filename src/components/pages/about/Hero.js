@@ -4,7 +4,7 @@ import hero from "@/assets/img/AboutHero.png";
 export default function Hero() {
   return (
     <section
-      className="relative bg-cover bg-center h-96 flex items-center justify-center"
+      className="relative bg-cover bg-center flex items-center justify-center h-96"
       style={{ backgroundImage: `url(${hero.src})` }}
     >
       {/* Overlay */}

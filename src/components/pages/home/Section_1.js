@@ -48,7 +48,7 @@ export default function Section_1() {
           </div>
           <Image
             alt="Team working on security solutions"
-            className="w-full md:w-1/2 rounded-lg shadow-lg"
+            className="w-full md:w-1/2"
             src={illustration}
             width={400}
             height={300}
