@@ -36,7 +36,7 @@ export default function Hero() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    fade: true,
+    SwipeDirection: "left",
   };
 
   return (

@@ -48,41 +48,75 @@ export default function Section_5() {
         {/* Static content */}
         <div className="flex flex-col md:flex-row md:items-start md:space-x-8 text-left">
           {/* Left section */}
-          <div className="md:w-1/2 mb-6 md:mb-0">
-            <h2 className="text-black text-6xl tracking-tight pl-4">
+          <div className="md:w-1/2 mb-6 md:mb-0" style={{fontFamily: "Josefin Sans"}}>
+            <h2 className="text-black tracking-tight pl-4 text-6xl sm:text-7xl xl:text-7xl font-semibold">
               Industries we
             </h2>
-            <h1 className="text-[#6B4B48] leading-tight mt-1 text-6xl tracking-tight pl-4">
+            <h1 className="text-[#6B4B48] leading-tight mt-1 tracking-tight pl-4 text-6xl sm:text-8xl xl:text-8xl font-semibold ">
               Served
             </h1>
-            <div className="flex space-x-6 mt-6 justify-end p-5">
-              <div className="w-20 h-20 border border-red-500 rotate-12"></div>
-              <div className="w-20 h-20 border border-red-500 rotate-45"></div>
-              <div className="w-20 h-20 border border-red-500 -rotate-12"></div>
+            <div className="flex lg:space-x-12 space-x-4 mt-6 justify-end pr-6">
+              {[12, 45, -12].map((deg, i) => (
+                <div
+                  key={i}
+                  className={`w-24 h-24 border border-red-500 rotate-[${deg}deg]`}
+                />
+              ))}
             </div>
           </div>
           {/* Right section */}
-          <div className="md:col-span-2 grid grid-cols-2 gap-6 border-l border-[#6B4B48] pl-6">
-            <ul className="list-disc list-inside text-sm font-semibold leading-snug space-y-1">
-              <li>Information Technology</li>
-              <li>Power &amp; Energy</li>
-              <li>Banking</li>
-              <li>Financial Services</li>
-              <li>Telecom</li>
-              <li>Government</li>
-              <li>Construction</li>
-              <li>Automobile</li>
+          <div className="md:col-span-2 grid grid-cols-2 gap-6 border-l border-[#6B4B48] pl-6" style={{fontFamily: "Josefin Sans"}}>
+            {/* First Column */}
+            <ul className="list-disc list-inside leading-snug space-y-1 lg:text-2xl text-xl text-red-500 font-semibold">
+              {[
+                "Information Technology",
+                "Power & Energy",
+                "Banking",
+                "Financial Services",
+                "Telecom",
+                "Government",
+                "Construction",
+                "Automobile",
+              ].map((item, index) => (
+                <li key={index}>
+                  <span
+                    className="bg-clip-text text-transparent"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(90deg,#f35153 0%, #FF0005 35%, #800000 50%, #000000 100%)",
+                    }}
+                  >
+                    {item}
+                  </span>
+                </li>
+              ))}
             </ul>
-            <ul className="list-disc list-inside text-sm font-semibold leading-snug space-y-1">
-              <li>Health &amp; Safety</li>
-              <li>PSU</li>
-              <li>Law Enforcement</li>
-              <li>Defense</li>
-              <li>Textile</li>
-              <li>Mining</li>
-              <li>Battery</li>
-              <li>E-Commerce</li>
-              <li>BPO</li>
+
+            {/* Second Column */}
+            <ul className="list-disc list-inside leading-snug space-y-1 lg:text-2xl text-xl text-red-500 font-semibold">
+              {[
+                "Health & Safety",
+                "PSU",
+                "Law Enforcement",
+                "Defense",
+                "Textile",
+                "Mining",
+                "Battery",
+                "E-Commerce",
+                "BPO",
+              ].map((item, index) => (
+                <li key={index}>
+                  <span
+                    className="bg-clip-text text-transparent"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(90deg,#f35153 0%, #FF0005 35%, #800000 50%, #000000 100%)",
+                    }}
+                  >
+                    {item}
+                  </span>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -92,16 +126,20 @@ export default function Section_5() {
           <span
             className="text-5xl bg-clip-text text-transparent"
             style={{
-              backgroundImage: "linear-gradient(90deg, #FFCCCC 0%, #FF0005 35%, #800000 50%, #000000 100%)",
+              backgroundImage:
+                "linear-gradient(90deg,#f35153 0%, #FF0005 35%, #800000 50%, #000000 100%)",
             }}
           >
             Valuable Testimonials
           </span>
         </div>
-        <div className="mt-10 text-white rounded-3xl px-6 py-8 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 max-w-4xl mx-auto" style={{
-              backgroundImage:
-                "linear-gradient(90deg, rgb(243, 81, 83) 0%, rgb(255, 0, 5) 35%, rgb(128, 0, 0) 50%, rgb(67 4 4) 100%)",
-            }}>
+        <div
+          className="mt-10 text-white rounded-3xl px-6 py-8 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 max-w-4xl mx-auto"
+          style={{
+            backgroundImage:
+              "linear-gradient(90deg, rgb(243, 81, 83) 0%, rgb(255, 0, 5) 35%, rgb(128, 0, 0) 50%, rgb(67 4 4) 100%)",
+          }}
+        >
           <button
             onClick={handlePrev}
             aria-label="Previous testimonial"
