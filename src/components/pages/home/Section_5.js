@@ -48,14 +48,14 @@ export default function Section_5() {
         {/* Static content */}
         <div className="flex flex-col md:flex-row md:items-start md:space-x-8 text-left">
           {/* Left section */}
-          <div className="md:w-1/2 mb-6 md:mb-0" style={{fontFamily: "Josefin Sans"}}>
-            <h2 className="text-black tracking-tight pl-4 text-6xl sm:text-7xl xl:text-7xl font-semibold">
+          <div className="md:w-1/2 mb-6 md:mb-0 pr-24" style={{fontFamily: "Josefin Sans"}}>
+            <h2 className="text-black tracking-tight pl-4 text-6xl xl:text-8xl font-semibold">
               Industries we
             </h2>
-            <h1 className="text-[#6B4B48] leading-tight mt-1 tracking-tight pl-4 text-6xl sm:text-8xl xl:text-8xl font-semibold ">
+            <h1 className="text-[#6B4B48] leading-tight mt-1 tracking-tight pl-4 text-6xl xl:text-9xl font-semibold ">
               Served
             </h1>
-            <div className="flex lg:space-x-12 space-x-4 mt-6 justify-end pr-6">
+            <div className="flex lg:space-x-12 space-x-4 mt-6 justify-end pr-0 xl:pr-6">
               {[12, 45, -12].map((deg, i) => (
                 <div
                   key={i}
@@ -65,9 +65,9 @@ export default function Section_5() {
             </div>
           </div>
           {/* Right section */}
-          <div className="md:col-span-2 grid grid-cols-2 gap-6 border-l border-[#6B4B48] pl-6" style={{fontFamily: "Josefin Sans"}}>
+          <div className="md:col-span-2 grid grid-cols-2 gap-6 border-l border-[#6B4B48] pl-6 xl:pl-11" style={{fontFamily: "Josefin Sans"}}>
             {/* First Column */}
-            <ul className="list-disc list-inside leading-snug space-y-1 lg:text-2xl text-xl text-red-500 font-semibold">
+            <ul className="list-disc list-inside leading-snug space-y-1 lg:text-4xl text-xl text-red-500 font-semibold">
               {[
                 "Information Technology",
                 "Power & Energy",
@@ -93,7 +93,7 @@ export default function Section_5() {
             </ul>
 
             {/* Second Column */}
-            <ul className="list-disc list-inside leading-snug space-y-1 lg:text-2xl text-xl text-red-500 font-semibold">
+            <ul className="list-disc list-inside leading-snug space-y-1 lg:text-4xl text-xl text-red-500 font-semibold">
               {[
                 "Health & Safety",
                 "PSU",

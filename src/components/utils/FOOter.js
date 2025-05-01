@@ -1,18 +1,12 @@
 import Image from "next/image";
-import {
-  FaLinkedin,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaFacebook,
-} from "react-icons/fa";
 import digisamurai from "@/assets/img/DigiSamurai.png";
+import Link from "next/link";
 
 export default function FOOter() {
   return (
     <>
       <section
-        className="py-16 relative bg-[#2a1616] text-[#c9aeb0] left-0 right-0  items-center px-4 sm:px-8 z-10"
+        className="pt-10 relative bg-[#2a1616] text-[#c9aeb0] left-0 right-0  items-center px-4 sm:px-8 z-10"
         style={{ backgroundColor: "#2A1111" }}
       >
         <h2
@@ -39,7 +33,7 @@ export default function FOOter() {
 
           {/* Right: Company Info (with vertical divider) */}
           <div className="md:w-2/3 flex justify-end md:pl-12">
-            <div className="flex flex-col md:flex-row md:space-x-16 border-l border-[#5a3f3f] pl-6">
+            <div className="flex flex-col md:flex-row md:space-x-16 lg:border-l border-[#5a3f3f] pl-6">
               {/* Company Section */}
               <div className="flex flex-col mb-6 md:mb-0">
                 <h3
@@ -48,27 +42,27 @@ export default function FOOter() {
                 >
                   Company
                 </h3>
-                <a
+                <Link
                   className="text-[16px] font-light mb-1 hover:underline w-max"
-                  href="#"
+                  href="/about"
                   style={{ fontFamily: "Josefin Sans" }}
                 >
                   About us
-                </a>
-                <a
+                </Link>
+                <Link
                   className="text-[16px] font-light hover:underline w-max"
                   href="#"
                   style={{ fontFamily: "Josefin Sans" }}
                 >
-                  Our team
-                </a>
-                <a
+                  Services
+                </Link>
+                <Link
                   className="text-[16px] font-light hover:underline w-max"
                   href="#"
                   style={{ fontFamily: "Josefin Sans" }}
                 >
                   Academics
-                </a>
+                </Link>
               </div>
 
               {/* Contact Section */}
@@ -87,59 +81,66 @@ export default function FOOter() {
                   <br />
                   Rajarhat, Kolkata -700135
                 </address>
-                <a
+                <Link
                   className="text-[14px] flex items-center mb-1 hover:underline w-max"
                   href="tel:+918910632224"
                   style={{ fontFamily: "Josefin Sans" }}
                 >
                   <i className="fas fa-phone-alt mr-1" /> +918910632224
-                </a>
-                <a
+                </Link>
+                <Link
                   className="text-[14px] flex items-center mb-3 hover:underline w-max"
                   href="tel:+917595887833"
                   style={{ fontFamily: "Josefin Sans" }}
                 >
                   <i className="fas fa-phone-alt mr-1" /> +917595887833
-                </a>
-                <a
+                </Link>
+                <Link
                   className="text-[14px] flex items-center mb-4 hover:underline w-max"
                   href="mailto:connect@digisamurai.co.in"
                   style={{ fontFamily: "Josefin Sans" }}
                 >
                   <i className="fas fa-envelope mr-1" />{" "}
                   connect@digisamurai.co.in
-                </a>
+                </Link>
 
                 {/* Socials */}
                 <div className="flex space-x-4 text-[#c9aeb0] text-[18px]">
-                  <a
+                  <Link
                     aria-label="LinkedIn"
                     className="hover:text-[#d9b7b9]"
                     href="#"
                   >
                     <i className="fab fa-linkedin-in" />
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     aria-label="YouTube"
                     className="hover:text-[#d9b7b9]"
                     href="#"
                   >
                     <i className="fab fa-youtube" />
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     aria-label="Facebook"
                     className="hover:text-[#d9b7b9]"
                     href="#"
                   >
                     <i className="fab fa-facebook-f" />
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     aria-label="Twitter"
                     className="hover:text-[#d9b7b9]"
                     href="#"
                   >
                     <i className="fab fa-twitter" />
-                  </a>
+                  </Link>
+                  <Link
+                    aria-label="Instagram"
+                    className="hover:text-[#d9b7b9]"
+                    href="#"
+                  >
+                    <i className="fab fa-instagram" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -149,15 +150,15 @@ export default function FOOter() {
         {/* Footer Bottom */}
         <div className="mt-6 flex flex-col md:flex-row justify-between items-center text-[10px] text-[#a18484]">
           <div className="flex space-x-4 mt-2 md:mt-0">
-            <a href="#" className="hover:underline">
+            <Link href="#" className="hover:underline">
               Cookies Settings
-            </a>
-            <a href="#" className="hover:underline">
+            </Link>
+            <Link href="#" className="hover:underline">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:underline">
+            </Link>
+            <Link href="#" className="hover:underline">
               Legal Notice
-            </a>
+            </Link>
           </div>
           <span>©DIGISAMURAI 2022</span>
           <div></div>
