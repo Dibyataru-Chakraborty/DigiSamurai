@@ -7,8 +7,6 @@ export default function Hero() {
       className="relative bg-cover bg-center flex items-center justify-center h-96"
       style={{ backgroundImage: `url(${hero.src})` }}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 opacity-35" style={{ backgroundColor: "#7B4C4C" }} />
 
       {/* Content aligned to left with minimum margin */}
       <div className="absolute bottom-10 w-full flex flex-col container mx-auto justify-center items-start text-left text-white px-6 brightness-100">

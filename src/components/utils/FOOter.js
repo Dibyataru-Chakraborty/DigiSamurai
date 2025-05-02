@@ -109,21 +109,21 @@ export default function FOOter() {
                   <Link
                     aria-label="LinkedIn"
                     className="hover:text-[#d9b7b9]"
-                    href="#"
+                    href="https://www.linkedin.com/in/digisamurai/"
                   >
                     <i className="fab fa-linkedin-in" />
                   </Link>
                   <Link
                     aria-label="YouTube"
                     className="hover:text-[#d9b7b9]"
-                    href="#"
+                    href="https://www.youtube.com/@digi_samurai"
                   >
                     <i className="fab fa-youtube" />
                   </Link>
                   <Link
                     aria-label="Facebook"
                     className="hover:text-[#d9b7b9]"
-                    href="#"
+                    href="https://www.facebook.com/digisamurais"
                   >
                     <i className="fab fa-facebook-f" />
                   </Link>
@@ -137,7 +137,7 @@ export default function FOOter() {
                   <Link
                     aria-label="Instagram"
                     className="hover:text-[#d9b7b9]"
-                    href="#"
+                    href="https://www.instagram.com/digi.samurai_/"
                   >
                     <i className="fab fa-instagram" />
                   </Link>

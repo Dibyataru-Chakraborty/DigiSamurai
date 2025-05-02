@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Section_1() {
   return (
     <section className="py-16 bg-gray-100 flex flex-col items-center justify-center text-center">
@@ -16,7 +18,7 @@ export default function Section_1() {
         </h2>
         <div className="flex flex-col md:flex-row justify-center md:space-x-8 pt-10">
           {/* Left side content */}
-          <section className="flex flex-col gap-10 md:w-1/2">
+          <div className="flex flex-col gap-10 md:w-1/2">
             <div
               className="bg-red-100 rounded-3xl p-8 text-center mx-auto md:mx-0"
               style={{ boxShadow: "0 0 40px 20px #f9d9d9" }}
@@ -36,15 +38,15 @@ export default function Section_1() {
               <div className="flex items-start gap-3">
                 <i className="fas fa-phone-alt text-2xl mt-1" />
                 <div className="leading-tight text-start">
-                  <p>+918910632224</p>
-                  <p>+917595887833</p>
+                  <Link href={"tel:+918910632224"}>+918910632224</Link>
+                  <Link href={"tel:+917595887833"}>+917595887833</Link>
                 </div>
               </div>
               <div className="flex items-center gap-2">
                 <i className="far fa-envelope text-2xl" />
                 <div className="leading-tight text-start">
-                  <p>connect@digisamurai.co.in</p>
-                  <p>info.digisamurai@gmail.com</p>
+                  <Link href={"mailto:connect@digisamurai.co.in"}>connect@digisamurai.co.in</Link> <br />
+                  <Link href={"mailto:info.digisamurai@gmail.com"}>info.digisamurai@gmail.com</Link>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -58,7 +60,7 @@ export default function Section_1() {
                 </p>
               </div>
             </div>
-          </section>
+          </div>
 
           {/* Right side content */}
           <div className="flex flex-col gap-6 md:w-1/2 lg:mx-auto md:mx-0">

@@ -24,7 +24,10 @@ export default function Section_5() {
           >
             Our leadership
           </h2>
-          <div className="flex flex-col sm:flex-row justify-around items-center gap-8" style={{fontFamily: "Jura"}}>
+          <div
+            className="flex flex-col sm:flex-row justify-around items-center gap-8"
+            style={{ fontFamily: "Jura" }}
+          >
             <div className="flex flex-col items-center max-w-xs">
               <Image
                 alt="Man in business suit sitting on black and red office chair with certificates on wall behind"
@@ -32,10 +35,10 @@ export default function Section_5() {
                 src={SouravSir}
               />
               <p className="text-3xl mt-4 text-center text-[#3a1a1a]">
-                John Doe
+                Sourav Bhaumik
               </p>
               <p className="text-center text-3xl text-[#3a1a1a]">Designation</p>
-              <Link aria-label="LinkedIn profile of John Doe" href="#">
+              <Link aria-label="LinkedIn profile of John Doe" href="https://www.linkedin.com/in/sourav-bhaumik-8732bb168/">
                 <Image
                   src={LinkedinIcon}
                   alt="LinkedIn icon"
@@ -52,7 +55,7 @@ export default function Section_5() {
                 src={PriyaMaam}
               />
               <p className="mt-4 text-center text-3xl text-[#3a1a1a]">
-                Jane Doe
+                Priya Bhaumik
               </p>
               <p className="text-center text-3xl text-[#3a1a1a]">Designation</p>
               <Link aria-label="LinkedIn profile of Jane Doe" href="#">

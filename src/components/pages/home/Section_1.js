@@ -20,15 +20,15 @@ export default function Section_1() {
               </span>
             </h2>
 
-            <div className="flex flex-col lg:flex-row items-center justify-start mt-4 font-[Jura]">
+            <div className="flex flex-col lg:flex-row justify-start mt-4 font-[Jura] items-center lg:items-end">
               {/* Decorative Image */}
-              <div className="relative lg:w-1/4 w-1/2 mb-4 lg:mb-0 lg:-ml-12">
+              <div className="relative items-center lg:w-1/2">
                 <Image
                   alt="Decorative small image"
                   className="rounded-lg"
                   src={Design1}
-                  width={150}
-                  height={150}
+                  width={200}
+                  height={200}
                 />
               </div>
 

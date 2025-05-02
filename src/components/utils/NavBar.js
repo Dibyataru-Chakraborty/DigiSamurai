@@ -27,7 +27,7 @@ const navItems = [
   },
   {
     name: "GALLERY",
-    link: "/gallery",
+    link: "/memories",
     icon: <IconLibraryPhoto/>,
   },
   {
