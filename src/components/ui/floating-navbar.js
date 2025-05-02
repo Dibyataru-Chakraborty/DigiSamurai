@@ -43,19 +43,19 @@ export const FloatingNav = ({ navItems, className, logo }) => {
       >
         {/* Logo */}
         {logo && (
-          <div className="flex items-center justify-start space-x-1 mr-auto ml-2 sm:ml-4 lg:ml-8 xl:ml-16">
+          <div className="flex justify-center xl:justify-start w-full xl:w-auto space-x-1 mr-auto ml-2 sm:ml-4 lg:ml-8 xl:ml-16">
             <Image
               src={logo}
               alt="Logo"
               width={100}
               height={60}
-              className="w-[80px] sm:w-[100px] lg:w-[120px] h-auto"
+              className="w-[80px] sm:w-[100px] xl:w-[120px] h-auto"
             />
           </div>
         )}
 
         {/* Navigation Items */}
-        <div className="flex flex-wrap justify-end max-w-full space-x-2 sm:space-x-4 lg:space-x-8 ml-auto mr-2 sm:mr-4 lg:mr-8 xl:mr-16">
+        <div className="flex flex-wrap justify-center xl:justify-end w-full xl:w-auto space-x-2 sm:space-x-4 xl:space-x-8 xl:ml-auto mr-2 sm:mr-4 lg:mr-8 xl:mr-16">
           {navItems.map((navItem, index) => (
             <NavItem
               key={index}
@@ -78,9 +78,7 @@ const NavItem = ({ navItem, setHoveredIndex, idx, total }) => {
 
   const isLast = idx === total - 1;
   const isActive =
-    navItem.link === "/"
-      ? pathname === "/"
-      : pathname.startsWith(navItem.link);
+    navItem.link === "/" ? pathname === "/" : pathname.startsWith(navItem.link);
 
   return (
     <Link
@@ -88,16 +86,15 @@ const NavItem = ({ navItem, setHoveredIndex, idx, total }) => {
       className={cn(
         "relative inline-flex justify-center items-center group rounded-full transition-colors duration-200 font-[Jura] px-3 py-2 sm:px-4 sm:py-2 text-sm sm:text-base",
         isActive ? "text-red-600 font-semibold" : "hover:text-primary",
-        isLast &&
-          "bg-red-200 text-red-800 font-semibold"
+        isLast && "bg-red-200 text-red-800 font-semibold"
       )}
       onMouseEnter={() => setHoveredIndex(idx)}
       onMouseLeave={() => setHoveredIndex(null)}
     >
       {/* Icon for mobile */}
-      <span className="block sm:hidden z-[5100]">{navItem.icon}</span>
+      <span className="block md:hidden z-[5100]">{navItem.icon}</span>
       {/* Text for larger screens */}
-      <span className="hidden sm:block z-[5100] whitespace-nowrap">
+      <span className="hidden md:block z-[5100] whitespace-nowrap">
         {navItem.name}
       </span>
     </Link>

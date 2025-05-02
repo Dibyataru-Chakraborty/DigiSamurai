@@ -18,7 +18,7 @@ export default function Section_2() {
             To keep updated, follow us on
           </h2>
         </div>
-        <div className="mt-4 flex justify-center space-x-16 text-[#7f2a1f] lg:text-7xl text-5xl">
+        <div className="mt-4 flex justify-center space-x-16 text-[#7f2a1f] lg:text-7xl text-3xl sm:text-5xl">
           <i className="fab fa-linkedin-in"></i>
           <i className="fab fa-youtube"></i>
           <i className="fab fa-facebook-f"></i>

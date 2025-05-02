@@ -4,7 +4,7 @@ export default function Section_1() {
   return (
     <section className="py-16 bg-gray-100 flex flex-col items-center justify-center text-center">
       <div className="container mx-auto w-full">
-        <h2 className="text-6xl font-bold ">
+        <h2 className="xl:text-6xl text-4xl font-bold ">
           <span
             className="bg-clip-text text-transparent"
             style={{
