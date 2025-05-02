@@ -12,9 +12,9 @@ export default function Section_2() {
                 Mission
               </p>
             </div>
-            <div className="md:w-1/2 lg:border-l border-[#6B4B4B] pl-8 md:pl-12">
+            <div className="md:w-1/2 lg:border-l border-[#6B4B4B] xl:pl-8 md:pl-12">
               <p
-                className="text-4xl leading-relaxed mb-0 text-center bg-clip-text text-transparent"
+                className="xl:text-4xl text-2xl leading-relaxed mb-0 text-center bg-clip-text text-transparent"
                 style={{
                   fontFamily: "Jura",
                   backgroundImage:
@@ -30,7 +30,7 @@ export default function Section_2() {
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-8">
             <div className="md:w-1/2 text-center">
               <p
-                className="bg-clip-text text-transparent text-4xl leading-relaxed mb-0"
+                className="bg-clip-text text-transparent xl:text-4xl text-2xl leading-relaxed mb-0"
                 style={{
                   fontFamily: "Jura",
                   backgroundImage:

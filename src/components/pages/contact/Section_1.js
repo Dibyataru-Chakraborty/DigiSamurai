@@ -45,8 +45,13 @@ export default function Section_1() {
               <div className="flex items-center gap-2">
                 <i className="far fa-envelope text-2xl" />
                 <div className="leading-tight text-start">
-                  <Link href={"mailto:connect@digisamurai.co.in"}>connect@digisamurai.co.in</Link> <br />
-                  <Link href={"mailto:info.digisamurai@gmail.com"}>info.digisamurai@gmail.com</Link>
+                  <Link href={"mailto:connect@digisamurai.co.in"}>
+                    connect@digisamurai.co.in
+                  </Link>{" "}
+                  <br />
+                  <Link href={"mailto:info.digisamurai@gmail.com"}>
+                    info.digisamurai@gmail.com
+                  </Link>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -61,7 +66,7 @@ export default function Section_1() {
               </div>
             </div>
           </div>
-
+          <div className="w-full xl:w-0 h-[2px] xl:h-0 bg-red-950 my-5 xl:my-0"></div>
           {/* Right side content */}
           <div className="flex flex-col gap-6 md:w-1/2 lg:mx-auto md:mx-0">
             {/* Form section with border */}

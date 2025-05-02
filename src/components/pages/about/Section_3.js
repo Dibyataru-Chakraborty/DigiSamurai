@@ -9,7 +9,7 @@ export default function Section_3() {
               "linear-gradient(90deg,rgba(255, 0, 5, 1) 0%, rgba(0, 0, 0, 1) 100%)",
           }}>Why Us</span>
           </h2>
-          <p className="mt-6 text-4xl mx-auto leading-relaxed font-[Jura] text-center bg-clip-text text-transparent" style={{
+          <p className="mt-6 xl:text-4xl text-xl mx-auto leading-relaxed font-[Jura] text-center bg-clip-text text-transparent" style={{
             backgroundImage:
               "linear-gradient(90deg,rgba(255, 0, 5, 1) 0%, rgba(0, 0, 0, 1) 100%)",
           }}>
@@ -17,7 +17,7 @@ export default function Section_3() {
             protection, and unwavering commitment to securing your digital
             future.”
           </p>
-          <p className="mt-6 text-black text-4xl mx-auto leading-relaxed font-[Jura] text-center">
+          <p className="mt-6 text-black xl:text-4xl text-xl mx-auto leading-relaxed font-[Jura] text-center">
             We lead the way in delivering bespoke cybersecurity &amp; compliance
             solutions that safeguard your business and streamline your
             regulatory processes. Partner with us to build robust security
@@ -25,7 +25,7 @@ export default function Section_3() {
             innova6ons to stay secure and competitive in an ever-evolving
             digital landscape
           </p>
-          <p className="mt-8 bg-red-300 lg:text-4xl text-2xl rounded-full px-8 py-4 mx-auto leading-relaxed font-[Jura] text-center" style={{color:"#2A1111"}}>
+          <p className="mt-8 bg-red-300 lg:text-4xl text-xl rounded-full px-8 py-4 mx-auto leading-relaxed font-[Jura] text-center" style={{color:"#2A1111"}}>
             Our team combines extensive expertise, industry-leading resources,
             and top-tier cyber security certifications to deliver unparalleled
             protection &amp; compliance solutions for your business

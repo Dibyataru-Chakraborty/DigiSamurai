@@ -38,7 +38,7 @@ export default function Section_4() {
         {/* Company Certifications Section */}
         <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between gap-6 md:gap-20 mb-12">
           <h2
-            className="text-red-600 font-semibold text-2xl md:text-6xl leading-tight md:leading-snug text-center md:text-left w-full md:w-auto"
+            className="text-red-600 font-semibold text-4xl md:text-6xl leading-tight md:leading-snug text-center md:text-left w-full md:w-auto"
             style={{ fontFamily: "Josefin Sans" }}
           >
             Company

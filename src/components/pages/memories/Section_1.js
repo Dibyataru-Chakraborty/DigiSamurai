@@ -120,8 +120,8 @@ export default function Section_1() {
               onClick={() => setSelectedYear(yearGroup.year)}
               className={`cursor-pointer transition-colors font-mono ${
                 yearGroup.year === selectedYear
-                  ? "text-red-600 font-semibold text-6xl"
-                  : "text-4xl hover:text-red-400"
+                  ? "text-red-600 font-semibold xl:text-6xl text-4xl"
+                  : "xl:text-4x text-xl hover:text-red-400"
               }`}
               style={{ fontFamily: "Jura" }}
             >
@@ -139,7 +139,7 @@ export default function Section_1() {
                 className="border-b border-gray-300 px-6 pt-6 pb-8"
               >
                 <h2
-                  className="text-6xl font-bold text-center mb-12 bg-clip-text text-transparent"
+                  className="xl:text-6xl text-3xl font-bold text-center mb-12 bg-clip-text text-transparent"
                   style={{
                     fontFamily: "Josefin Sans",
                     backgroundImage:
@@ -149,7 +149,7 @@ export default function Section_1() {
                   {event.title}
                 </h2>
                 <div
-                  className="flex flex-col sm:flex-row sm:space-x-6 text-3xl"
+                  className="flex flex-col sm:flex-row sm:space-x-6 xl:text-3xl text-xl"
                   style={{ fontFamily: "Jura" }}
                 >
                   <div className="sm:w-1/3 font-mono mb-4 sm:mb-0">
