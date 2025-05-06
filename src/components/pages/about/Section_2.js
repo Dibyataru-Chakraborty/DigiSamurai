@@ -2,7 +2,7 @@ import ourmissionourvison from "@/assets/img/ourmissionourvison.png";
 
 export default function Section_2() {
   return (
-    <section className="pb-16 bg-gray-100 ">
+    <section className="pb-16 bg-white">
       <div className="container mx-auto px-8 py-16">
         <div className="bg-cover bg-center rounded-[100px] lg:p-24 p-8 flex flex-col gap-16" style={{ backgroundImage: `url(${ourmissionourvison.src})` }}>
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-8">

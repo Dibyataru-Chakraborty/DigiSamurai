@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Section_5() {
   return (
-    <section className="pb-16 bg-gray-100 ">
+    <section className="pb-16 bg-white">
       <div className="container mx-auto px-8 py-16 w-full  p-6">
         <div
           className="w-full h-[3px] mx-auto max-w-7xl"

@@ -6,8 +6,6 @@ export default function Section_3() {
       className="relative bg-cover bg-center h-[30rem] flex items-center justify-center"
       style={{ backgroundImage: `url(${AcademicsFooter.src})` }}
     >
-      {/* Semi-dark overlay for text contrast */}
-      <div className="absolute inset-0 bg-black/60" />
 
       {/* Content container */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">

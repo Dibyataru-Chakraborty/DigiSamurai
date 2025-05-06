@@ -1,5 +1,5 @@
 import Image from "next/image";
-import digisamurai from "@/assets/img/DigiSamurai.png";
+import digisamurai from "@/assets/logo/DigiSamurai.png";
 import Link from "next/link";
 
 export default function FOOter() {

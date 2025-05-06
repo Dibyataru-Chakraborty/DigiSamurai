@@ -1,8 +1,11 @@
+"use client";
+
 import Link from "next/link";
 
 export default function Section_1() {
+
   return (
-    <section className="py-16 bg-gray-100 flex flex-col items-center justify-center text-center">
+    <section className="py-16 bg-white flex flex-col items-center justify-center text-center">
       <div className="container mx-auto w-full">
         <h2 className="xl:text-6xl text-4xl font-bold ">
           <span
@@ -66,12 +69,12 @@ export default function Section_1() {
               </div>
             </div>
           </div>
-          <div className="w-full xl:w-0 h-[2px] xl:h-0 bg-red-950 my-5 xl:my-0"></div>
+          <div className="w-full md:w-0 h-[2px] md:h-0 bg-red-950 my-5 md:my-0"></div>
           {/* Right side content */}
           <div className="flex flex-col gap-6 md:w-1/2 lg:mx-auto md:mx-0">
             {/* Form section with border */}
             <section className="flex flex-col gap-6 border-2 border-gray-300 rounded-3xl p-8">
-              <form className="flex flex-col gap-4 text-start">
+              <form className="flex flex-col gap-4 text-start lg:h-80 overflow-auto">
                 <label className="text-lg font-normal" htmlFor="name">
                   Name
                 </label>
@@ -79,17 +82,7 @@ export default function Section_1() {
                   required
                   id="name"
                   type="text"
-                  placeholder="Value"
-                  className="border border-gray-300 rounded-md px-3 py-2 text-lg placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-red-600"
-                />
-                <label className="text-lg font-normal" htmlFor="surname">
-                  Surname
-                </label>
-                <input
-                  required
-                  id="surname"
-                  type="text"
-                  placeholder="Value"
+                  placeholder="john Doe"
                   className="border border-gray-300 rounded-md px-3 py-2 text-lg placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-red-600"
                 />
                 <label className="text-lg font-normal" htmlFor="email">
@@ -111,19 +104,18 @@ export default function Section_1() {
                   type="tel"
                   minLength={10}
                   maxLength={10}
-                  placeholder="Value"
+                  placeholder="+91 1234567890"
                   className="border border-gray-300 rounded-md px-3 py-2 text-lg placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-red-600"
                 />
                 <label className="text-lg font-normal" htmlFor="message">
                   Message
                 </label>
-                <textarea
+                <input
                   required
                   id="message"
-                  rows={3}
-                  placeholder="Value"
-                  className="border border-gray-300 rounded-md px-3 py-2 text-lg placeholder:text-gray-400 resize-none focus:outline-none focus:ring-1 focus:ring-red-600"
-                  defaultValue={""}
+                  placeholder="Message"
+                  type="text"
+                  className="border border-gray-300 rounded-md px-3 py-2 text-lg placeholder:text-gray-400 resize-none focus:outline-none focus:ring-1 focus:ring-red-600 overflow-hidden"
                 />
                 <button
                   type="submit"
