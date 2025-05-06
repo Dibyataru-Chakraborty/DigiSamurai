@@ -2,7 +2,7 @@
 
 export default function Section_3() {
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-16 bg-white">
       <div className="container mx-auto flex flex-col lg:w-5/6 lg:text-left font-bold ">
         <div className="w-full h-[3px]" style={{ backgroundColor: '#997677' }}></div>
 

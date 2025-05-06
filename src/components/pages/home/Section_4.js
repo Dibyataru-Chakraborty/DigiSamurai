@@ -2,7 +2,7 @@
 
 export default function Section_4() {
   return (
-    <section className="py-16 relative  bg-gray-100">
+    <section className="py-16 relative  bg-white">
       <div className="container mx-auto text-center items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8" style={{
         fontFamily: "Josefin Sans",
       }}>

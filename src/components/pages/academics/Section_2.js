@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Section_2() {
   return (
-    <section className="pb-16 bg-gray-100 ">
+    <section className="pb-16 bg-white">
       <div className="container mx-auto px-8 py-16 w-full  p-6">
         <div
           className="w-full h-[3px] mx-auto max-w-7xl"
@@ -13,7 +13,7 @@ export default function Section_2() {
         ></div>
         <div className="mx-auto px-4 py-10">
           <h2
-            className="text-6xl font-bold text-center mb-12 bg-clip-text text-transparent"
+            className="text-center mb-12 xl:text-6xl text-5xl font-bold py-5 bg-clip-text text-transparent"
             style={{
               fontFamily: "Josefin Sans",
               backgroundImage:
@@ -40,8 +40,8 @@ export default function Section_2() {
                     Cyber Security
                   </h2>
                   <div className="flex items-center justify-center">
-                    <a
-                      // href="/path/to/your-brochure.pdf" // Replace with your actual file path
+                    <Link
+                      href="/academics/cybersecurity"
                       download
                       className="bg-red-700 text-white px-8 py-3 rounded-full inline-flex items-center space-x-2 mx-auto shadow-md hover:bg-red-800 transition justify-center group relative overflow-hidden"
                     >
@@ -51,7 +51,7 @@ export default function Section_2() {
                       <div className="absolute inset-0 flex items-center justify-center -translate-x-40 group-hover:translate-x-0 transition duration-500 z-10">
                         <i className="fas fa-download"></i>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -72,8 +72,8 @@ export default function Section_2() {
                     Data Science
                   </h2>
                   <div className="flex items-center justify-center">
-                    <a
-                      // href="/path/to/your-brochure.pdf" // Replace with your actual file path
+                    <Link
+                      href="/academics/datascience"
                       download
                       className="bg-red-700 text-white px-8 py-3 rounded-full inline-flex items-center space-x-2 mx-auto shadow-md hover:bg-red-800 transition justify-center group relative overflow-hidden"
                     >
@@ -83,7 +83,7 @@ export default function Section_2() {
                       <div className="absolute inset-0 flex items-center justify-center -translate-x-40 group-hover:translate-x-0 transition duration-500 z-10">
                         <i className="fas fa-download"></i>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

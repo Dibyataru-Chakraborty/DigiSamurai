@@ -7,12 +7,12 @@ import hero from "@/assets/img/Hero.png";
 import hero2 from "@/assets/img/Hero2.png";
 import hero3 from "@/assets/img/Hero3.png";
 import hero4 from "@/assets/img/Hero4.png";
-import msme from "@/assets/img/MSME.png";
-import iso9001 from "@/assets/img/ISO9001.png";
-import iso200001 from "@/assets/img/ISO200001.png";
-import iso27001 from "@/assets/img/ISO27001.png";
-import iso27701 from "@/assets/img/ISO27701.png";
-import iso22301 from "@/assets/img/ISO22301.png";
+import msme from "@/assets/logo/MSME.png";
+import iso9001 from "@/assets/logo/ISO9001.png";
+import iso200001 from "@/assets/logo/ISO200001.png";
+import iso27001 from "@/assets/logo/ISO27001.png";
+import iso27701 from "@/assets/logo/ISO27701.png";
+import iso22301 from "@/assets/logo/ISO22301.png";
 
 const slides = [
   {

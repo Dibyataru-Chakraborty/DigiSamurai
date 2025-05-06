@@ -1,6 +1,6 @@
 export default function Section_1() {
   return (
-    <section className="pt-16 bg-gray-100">
+    <section className="pt-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="py-10 text-center">
           <h2
@@ -19,7 +19,7 @@ export default function Section_1() {
           <div className="flex flex-col items-center max-w-xl text-center">
             <i className="fas fa-users text-7xl mb-4" />
             <h3 className="text-4xl font-bold mb-2">Large Community</h3>
-            <p className="text-2xl">
+            <p className="text-2xl mt-4">
               Join our vibrant learning community of students, alumni, and
               educators.
             </p>
@@ -29,19 +29,19 @@ export default function Section_1() {
             <h3 className="text-4xl font-bold mb-2">
               Comprehensive Curriculum
             </h3>
-            <p className="text-2xl">
+            <p className="text-2xl mt-4">
               Enhance your technical skills with our linear, world-class,
               project-based curriculum.
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-12 font-[Jura] mb-12">
+        <div className="flex flex-wrap justify-center gap-12 font-[Jura]">
           <div className="flex flex-col items-center max-w-xl text-center">
             <i className="fas fa-star text-7xl mb-4" />
             <h3 className="text-4xl font-bold mb-2">
               Extensive Certifications
             </h3>
-            <p className="text-2xl">
+            <p className="text-2xl mt-4">
               Earn industry-recognized, verifiable certifications in high-demand
               technologies.
             </p>

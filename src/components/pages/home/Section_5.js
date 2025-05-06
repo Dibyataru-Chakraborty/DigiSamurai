@@ -1,30 +1,30 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export default function Section_5() {
   const testimonials = [
     {
-      name: "Jane Doe",
-      role: "Student",
-      company: "Microsoft",
+      name: "SAYAK MANDAL",
+      role: "SOC Analyst",
+      company: "ProcessIT Global Pvt. Ltd",
       image: "/path/to/image1.jpg",
-      text: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sem ac erat tincidunt auctor ac ut libero. Proin sed congue elit, eget dictum dolor. Cras dignissim ornare risus ut commodo.”",
+      text: "“Completing the cybersecurity training at Digi Samurai was a game-changer for my career. The program offers hands-on learning with expert instructors who bring real-world experience to every lesson. Thanks to their practical approach and strong curriculum, I secured a great job in cybersecurity shortly after graduating. I highly recommend Digi Samurai to anyone serious about entering the field.”",
     },
     {
-      name: "John Smith",
-      role: "Engineer",
-      company: "Google",
+      name: "Rohan Nandi",
+      role: "Auditor",
+      company: "Singhi & Co.",
       image: "/path/to/image2.jpg",
-      text: "“Suspendisse potenti. Nullam vehicula, justo at fermentum tincidunt, ligula sapien tincidunt arcu, non tincidunt justo sapien nec eros.”",
+      text: "“I recently completed the cybersecurity training at Digi Samurai, and it was one of the best decisions for my career. The program combines practical, hands-on experience with expert instruction, making complex topics easy to grasp. The instructors are knowledgeable and bring real-world insights into every lesson. Thanks to their guidance, I landed a great cybersecurity job soon after finishing the course. If you're serious about a career in cybersecurity, Digi Samurai is the place to start.”",
     },
     {
-      name: "Alice Johnson",
-      role: "Designer",
-      company: "Apple",
+      name: "Raktima Auddi",
+      role: "Auditor",
+      company: "Singhi & Co.",
       image: "/path/to/image3.jpg",
-      text: "“Praesent nec magna at ipsum facilisis tincidunt. Integer vel libero id justo tincidunt tincidunt.”",
+      text: "“Digi Samurai’s hands-on cybersecurity training was a game-changer for my career. The expert instructors made complex concepts easy to grasp, and their real-world insights helped me land a great job soon after completing the course. Highly recommended for practical, high-quality training.”",
     },
   ];
 
@@ -42,31 +42,43 @@ export default function Section_5() {
     );
   };
 
+  // Auto-scroll effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000); // Scroll every 5 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, [testimonials.length]);
+
   return (
-    <section className="py-16 relative bg-gray-100">
+    <section className="py-16 relative bg-white">
       <div className="container mx-auto text-center space-y-16">
         {/* Static content */}
         <div className="flex flex-col md:flex-row md:items-start md:space-x-8 text-left">
           {/* Left section */}
-          <div className="md:w-1/2 mb-6 md:mb-0 pr-24" style={{fontFamily: "Josefin Sans"}}>
+          <div className="md:w-1/2 mb-6 md:mb-0 pr-24" style={{ fontFamily: "Josefin Sans" }}>
             <h2 className="text-black tracking-tight pl-4 text-6xl xl:text-8xl font-semibold">
               Industries we
             </h2>
-            <h1 className="text-[#6B4B48] leading-tight mt-1 tracking-tight pl-4 text-6xl xl:text-9xl font-semibold ">
+            <h1 className="text-[#6B4B48] leading-tight mt-1 tracking-tight pl-4 text-6xl xl:text-9xl font-semibold">
               Served
             </h1>
             <div className="flex lg:space-x-12 space-x-4 mt-6 justify-end pr-0 xl:pr-6">
               {[12, 45, -12].map((deg, i) => (
                 <div
                   key={i}
-                  className={`w-24 h-24 border border-red-500 rotate-[${deg}deg]`}
+                  className="w-24 h-24 border border-red-500"
+                  style={{ transform: `rotate(${deg}deg)` }}
                 />
               ))}
             </div>
           </div>
+
           {/* Right section */}
-          <div className="md:col-span-2 grid grid-cols-2 gap-6 border-l border-[#6B4B48] pl-6 xl:pl-11" style={{fontFamily: "Josefin Sans"}}>
-            {/* First Column */}
+          <div className="md:col-span-2 grid grid-cols-2 gap-6 border-l border-[#6B4B48] pl-6 xl:pl-11" style={{ fontFamily: "Josefin Sans" }}>
             <ul className="list-disc list-inside leading-snug space-y-1 lg:text-4xl text-xl text-red-500 font-semibold">
               {[
                 "Information Technology",
@@ -92,7 +104,6 @@ export default function Section_5() {
               ))}
             </ul>
 
-            {/* Second Column */}
             <ul className="list-disc list-inside leading-snug space-y-1 lg:text-4xl text-xl text-red-500 font-semibold">
               {[
                 "Health & Safety",
@@ -133,11 +144,12 @@ export default function Section_5() {
             Valuable Testimonials
           </span>
         </div>
+
         <div
           className="mt-10 text-white rounded-3xl px-6 py-8 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 max-w-4xl mx-auto"
           style={{
             backgroundImage:
-              "linear-gradient(90deg, rgb(243, 81, 83) 0%, rgb(255, 0, 5) 35%, rgb(128, 0, 0) 50%, rgb(67 4 4) 100%)",
+              "linear-gradient(90deg,rgba(255, 0, 5, 1) 0%, rgba(0, 0, 0, 1) 100%)",
           }}
         >
           <button

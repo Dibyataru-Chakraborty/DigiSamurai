@@ -1,11 +1,11 @@
 // components/Section_1.js
 import Image from "next/image";
 import illustration from "@/assets/img/Illustration.png";
-import Design1 from "@/assets/img/Design1.png";
+import Design1 from "@/assets/logo/Design1.png";
 
 export default function Section_1() {
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-16 bg-white">
       <div className="container mx-auto text-left">
         <div className="flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8 mx-16">
           <div className="lg:w-1/2 w-full text-center lg:text-left">

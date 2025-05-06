@@ -6,7 +6,7 @@ import SecurityConsultancySolutions from "@/assets/img/SecurityConsultancySoluti
 
 export default function Section_2() {
   return (
-    <section className="py-16 bg-gray-100 flex flex-col items-center justify-center text-center">
+    <section className="py-16 bg-white flex flex-col items-center justify-center text-center">
       <div className="container mx-auto">
         <h2
           className="text-6xl font-bold bg-clip-text text-transparent"

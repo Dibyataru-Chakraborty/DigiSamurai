@@ -34,7 +34,7 @@ export const FloatingNav = ({ navItems, className, logo }) => {
         animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
         transition={{ duration: 0.2 }}
         className={cn(
-          `bg-white flex flex-wrap items-center justify-between fixed top-5 inset-x-4 sm:inset-x-8 lg:inset-x-16 px-3 py-2 z-[5000]
+          `bg-gray-100 flex flex-wrap items-center justify-between fixed top-5 inset-x-4 sm:inset-x-8 lg:inset-x-16 px-3 py-2 z-[5000]
           max-w-screen border border-transparent backdrop-blur-sm
           rounded-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
           transition-colors duration-300 font-[Jura]`,

@@ -1,7 +1,7 @@
 export default function Section_2() {
   return (
-    <section className="pb-16 bg-gray-100 ">
-      <div className="container mx-auto px-8 py-16 w-full  p-6">
+    <section className="pb-16 bg-white">
+      <div className="container mx-auto px-8 py-16 w-full p-6">
         <div
           className="w-full h-[3px] mx-auto max-w-7xl"
           style={{ backgroundColor: "#997677" }}
@@ -18,7 +18,7 @@ export default function Section_2() {
             To keep updated, follow us on
           </h2>
         </div>
-        <div className="mt-4 flex justify-center space-x-16 text-[#7f2a1f] lg:text-7xl text-3xl sm:text-5xl">
+        <div className="mt-4 flex justify-center space-x-16 text-[#7f2a1f] lg:text-7xl text-2xl sm:text-5xl">
           <i className="fab fa-linkedin-in"></i>
           <i className="fab fa-youtube"></i>
           <i className="fab fa-facebook-f"></i>

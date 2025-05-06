@@ -1,7 +1,7 @@
 export default function Section_3() {
   return (
     <>
-      <section className="pb-16 bg-gray-100 ">
+      <section className="pb-16 bg-white">
         <div className="container mx-auto px-8 py-16">
           <h2 className="text-6xl mb-12 bg-clip-text text-transparent font-semibold text-center" style={{ fontFamily: "Josefin Sans" }}>
             <span className="bg-clip-text text-transparent" style={{
@@ -25,7 +25,7 @@ export default function Section_3() {
             innova6ons to stay secure and competitive in an ever-evolving
             digital landscape
           </p>
-          <p className="mt-8 bg-red-300 lg:text-4xl text-xl rounded-full px-8 py-4 mx-auto leading-relaxed font-[Jura] text-center" style={{color:"#2A1111"}}>
+          <p className="mt-8 bg-red-300 lg:text-4xl text-xl rounded-3xl lg:rounded-full px-8 py-4 mx-auto leading-relaxed font-[Jura] text-center" style={{color:"#2A1111"}}>
             Our team combines extensive expertise, industry-leading resources,
             and top-tier cyber security certifications to deliver unparalleled
             protection &amp; compliance solutions for your business

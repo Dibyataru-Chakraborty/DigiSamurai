@@ -2,7 +2,7 @@
 
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { IconHome, IconDeviceDesktopCode , IconMail, IconInfoSquareRounded, IconLibraryPhoto, IconBookmark } from "@tabler/icons-react";
-import digisamurai from "@/assets/img/DigiSamurai.png";
+import digisamurai from "@/assets/logo/DigiSamurai.png";
 
 const navItems = [
   {

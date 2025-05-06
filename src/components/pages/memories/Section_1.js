@@ -110,7 +110,7 @@ export default function Section_1() {
   );
 
   return (
-    <section className="pt-7 bg-gray-100">
+    <section className="pt-7 bg-white">
       <div className="container mx-auto text-left">
         {/* Year Tabs */}
         <div className="flex justify-center items-center space-x-6 pb-14 text-gray-500 select-none">
