@@ -35,13 +35,14 @@ export default function Section_1() {
               </p>
             </div>
             <div
-              className="flex flex-col gap-8 mx-auto md:mx-0 text-[#6b1a1a] text-sm lg:text-xl"
+              className="flex flex-col gap-8 mx-auto md:mx-0 text-[#6b1a1a] text-2xl lg:text-4xl pt-16"
               style={{ fontFamily: "Josefin Sans" }}
             >
               <div className="flex items-start gap-3">
                 <i className="fas fa-phone-alt text-2xl mt-1" />
                 <div className="leading-tight text-start">
-                  <Link href={"tel:+918910632224"}>+918910632224</Link>
+                  <Link href={"tel:+918910632224"}>+918910632224</Link>{" "}
+                  <br/>
                   <Link href={"tel:+917595887833"}>+917595887833</Link>
                 </div>
               </div>
@@ -74,7 +75,7 @@ export default function Section_1() {
           <div className="flex flex-col gap-6 md:w-1/2 lg:mx-auto md:mx-0">
             {/* Form section with border */}
             <section className="flex flex-col gap-6 border-2 border-gray-300 rounded-3xl p-8">
-              <form className="flex flex-col gap-4 text-start lg:h-80 overflow-auto">
+              <form className="flex flex-col gap-4 text-start lg:h-96 overflow-auto">
                 <label className="text-lg font-normal" htmlFor="name">
                   Name
                 </label>

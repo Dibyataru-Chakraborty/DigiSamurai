@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "3600 Security Partnership",
+    title: "360° Security Partnership",
     image: academicscourses, // Your imported image
     brochureLink: "/services/360_security_partnership",
   },
@@ -77,10 +77,10 @@ export default function Section_2() {
                         className="bg-red-700 text-white px-8 py-3 rounded-full inline-flex items-center space-x-2 shadow-md hover:bg-red-800 transition group relative overflow-hidden"
                       >
                         <span className="group-hover:translate-x-40 transition duration-500">
-                          Download Brochure
+                          Check Details
                         </span>
                         <div className="absolute inset-0 flex items-center justify-center -translate-x-40 group-hover:translate-x-0 transition duration-500 z-10">
-                          <i className="fas fa-download"></i>
+                          <i class="fa-solid fa-circle-info"></i>
                         </div>
                       </Link>
                     </div>

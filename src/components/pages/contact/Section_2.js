@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Section_2() {
   return (
     <section className="pb-16 bg-white">
@@ -19,11 +21,11 @@ export default function Section_2() {
           </h2>
         </div>
         <div className="mt-4 flex justify-center space-x-16 text-[#7f2a1f] lg:text-7xl text-2xl sm:text-5xl">
-          <i className="fab fa-linkedin-in"></i>
-          <i className="fab fa-youtube"></i>
-          <i className="fab fa-facebook-f"></i>
-          <i className="fab fa-twitter"></i>
-          <i className="fab fa-instagram"></i>
+          <Link href={"https://www.linkedin.com/in/digisamurai/"}><i className="fab fa-linkedin-in"></i></Link>
+          <Link href={"https://www.youtube.com/@digi_samurai"}></Link><i className="fab fa-youtube"></i>
+          <Link href={"https://www.facebook.com/digisamurais"}></Link><i className="fab fa-facebook-f"></i>
+          <Link href={""}></Link><i className="fab fa-x-twitter"></i>
+          <Link href={"https://www.instagram.com/digi.samurai_/"}></Link><i className="fab fa-instagram"></i>
         </div>
       </div>
     </section>
