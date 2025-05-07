@@ -3,9 +3,26 @@ import FOOter from "@/components/utils/FOOter";
 import Hero from "@/components/pages/services/sub/Hero";
 import Section_1 from "@/components/pages/services/sub/Section_1";
 import Section_2 from "@/components/pages/services/sub/Section_2";
-// import Section_3 from "@/components/pages/services/sub/Section_3";
 import Section_4 from "@/components/pages/services/sub/Section_4";
 import Section_3 from "@/components/pages/services/sub/Section_3";
+
+import ISO from "@/assets/logo/iso.jpg"
+import EU from "@/assets/logo/eugdpr.jpg"
+import AICPA from "@/assets/logo/aicpa.jpg"
+import HIPAA from "@/assets/logo/hipaa.jpg"
+import DSS from "@/assets/logo/dss.jpg"
+
+import NIST from "@/assets/logo/nist.jpg"
+import OWASP from "@/assets/logo/owasp.jpg"
+import PTES from "@/assets/logo/ptes.jpg"
+import OSSTMM3 from "@/assets/logo/osstmm3.jpg"
+import ISSAF from "@/assets/logo/issaf.jpg"
+
+import MSIP from "@/assets/logo/MSIP.png"
+import WAZUH from "@/assets/logo/WAZUH.png"
+import ELASTIC from "@/assets/logo/ELASTIC.png"
+import CORTEX from "@/assets/logo/cortex.png"
+import HIVE from "@/assets/logo/HIVE.png"
 
 // Mock service data - Ideally from CMS or API
 const SERVICES = {
@@ -82,18 +99,32 @@ const SERVICES = {
     section_3: {
       heading1: "Compliances",
       heading2: "Approach",
-      services: [
-        "Active Directory VAPT",
-        "Cloud VAPT",
-        "WiFi VAPT",
-        "Mobile Application VAPT",
-        "Secure Config. Review",
-        "Secure Code Review (SAST)",
-        "Network VAPT",
-        "API VAPT",
-        "Web Application VAPT",  
-      ],
     },
+    section_3: {
+      sections: [
+        {
+          heading: "Compliances",
+          items: [
+            { name: "ISO 27001", logo: ISO },
+            { name: "EU GDPR", logo: EU },
+            { name: "AICPA SOC 2", logo: AICPA },
+            { name: "HIPAA", logo: HIPAA },
+            { name: "PCI DSS", logo: DSS },
+          ]
+        },
+        {
+          heading: "Approach",
+          items: [
+            { name: "NIST", logo: NIST },
+            { name: "OWASP", logo: OWASP },
+            { name: "PTES", logo: PTES },
+            { name: "OSSTMM3", logo: OSSTMM3 },
+            { name: "ISSAF", logo: ISSAF },
+          ]
+        }
+      ]
+    }
+    
   },
 
   defensive_security: {
@@ -151,6 +182,20 @@ const SERVICES = {
         },
       ]      
     },
+    section_3: {
+      sections: [
+        {
+          heading: "Tools",
+          items: [
+            { name: "MSIP", logo: MSIP },
+            { name: "WAZUH", logo: WAZUH },
+            { name: "ELASTIC", logo: ELASTIC },
+            { name: "CORTEX", logo: CORTEX },
+            { name: "HIVE", logo: HIVE },
+          ]
+        }
+      ]
+    }
   },
 };
 

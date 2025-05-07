@@ -395,7 +395,7 @@ export function ErrorPage() {
   ];
 
   return (
-    <div className="flex flex-row items-center justify-center py-40 lg:py-44 h-screen dark:bg-black bg-white relative w-full">
+    <div className="flex flex-row items-center justify-center py-40 lg:py-44 h-screen bg-black relative w-full">
       <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full px-4">
         <motion.div
           initial={{
@@ -421,7 +421,7 @@ export function ErrorPage() {
           </p>
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-        <div className="absolute w-full -bottom-20 h-full z-10">
+        <div className="absolute w-full -bottom-32 h-full z-10">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
