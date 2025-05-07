@@ -26,7 +26,7 @@ const navItems = [
     icon: <IconInfoSquareRounded/>,
   },
   {
-    name: "GALLERY",
+    name: "MEMORIES",
     link: "/memories",
     icon: <IconLibraryPhoto/>,
   },

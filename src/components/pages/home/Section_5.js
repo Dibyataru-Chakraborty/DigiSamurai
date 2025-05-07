@@ -55,7 +55,7 @@ export default function Section_5() {
 
   return (
     <section className="py-16 relative bg-white">
-      <div className="container mx-auto text-center space-y-16">
+      <div className="container mx-auto text-center space-y-16 lg:w-5/6">
         {/* Static content */}
         <div className="flex flex-col md:flex-row md:items-start md:space-x-8 text-left">
           {/* Left section */}

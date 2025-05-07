@@ -122,7 +122,7 @@ export default function Section_4() {
 
   return (
     <section className="bg-white">
-      <div className="container mx-auto px-8 py-16 w-full p-6">
+      <div className="container mx-auto px-8 py-16 w-full p-6 lg:w-5/6">
         {/* Company Certifications Section */}
         <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between gap-6 md:gap-20 mb-12">
           <h2

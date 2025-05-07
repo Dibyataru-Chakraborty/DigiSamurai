@@ -6,7 +6,7 @@ export default function Section_1() {
 
   return (
     <section className="py-16 bg-white flex flex-col items-center justify-center text-center">
-      <div className="container mx-auto w-full">
+      <div className="container mx-auto w-full lg:w-5/6">
         <h2 className="xl:text-6xl text-4xl font-bold ">
           <span
             className="bg-clip-text text-transparent"
@@ -35,7 +35,7 @@ export default function Section_1() {
               </p>
             </div>
             <div
-              className="flex flex-col gap-8 mx-auto md:mx-0 text-[#6b1a1a] text-2xl lg:text-4xl pt-16"
+              className="flex flex-col gap-8 mx-auto md:mx-0 text-[#6b1a1a] text-2xl lg:text-3xl pt-16"
               style={{ fontFamily: "Josefin Sans" }}
             >
               <div className="flex items-start gap-3">
@@ -75,7 +75,7 @@ export default function Section_1() {
           <div className="flex flex-col gap-6 md:w-1/2 lg:mx-auto md:mx-0">
             {/* Form section with border */}
             <section className="flex flex-col gap-6 border-2 border-gray-300 rounded-3xl p-8">
-              <form className="flex flex-col gap-4 text-start lg:h-96 overflow-auto">
+              <form className="flex flex-col gap-4 text-start lg:h-[400] overflow-auto">
                 <label className="text-lg font-normal" htmlFor="name">
                   Name
                 </label>
@@ -128,8 +128,7 @@ export default function Section_1() {
             </section>
 
             {/* Map placeholder outside the border */}
-            <div
-              className="bg-gray-300 w-full h-96 flex justify-center items-center text-gray-700 text-sm"
+            <div className="bg-gray-300 w-full h-96 flex justify-center items-center text-gray-700 text-sm mt-5"
               aria-label="Map placeholder"
             >
               <iframe

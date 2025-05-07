@@ -32,16 +32,52 @@ const SERVICES = {
     section_2: {
       heading: "Offensive security services we provide",
       services: [
-        "Active Directory VAPT",
-        "Cloud VAPT",
-        "WiFi VAPT",
-        "Mobile Application VAPT",
-        "Secure Config. Review",
-        "Secure Code Review (SAST)",
-        "Network VAPT",
-        "API VAPT",
-        "Web Application VAPT",  
-      ],
+        {
+          title: "Active Directory VAPT",
+          description: "Assessment of Active Directory environments to identify vulnerabilities and misconfigurations.",
+          link: "#",
+        },
+        {
+          title: "Cloud VAPT",
+          description: "Vulnerability assessment and penetration testing for cloud environments like AWS, Azure, and GCP.",
+          link: "#",
+        },
+        {
+          title: "WiFi VAPT",
+          description: "Testing of wireless networks to identify risks such as rogue access points or weak encryption.",
+          link: "#",
+        },
+        {
+          title: "Mobile Application VAPT",
+          description: "Security assessment of mobile apps for vulnerabilities on Android and iOS platforms.",
+          link: "#",
+        },
+        {
+          title: "Secure Config. Review",
+          description: "Evaluation of system configurations against security best practices and compliance standards.",
+          link: "#",
+        },
+        {
+          title: "Secure Code Review (SAST)",
+          description: "Static analysis of source code to detect security flaws early in the development lifecycle.",
+          link: "#",
+        },
+        {
+          title: "Network VAPT",
+          description: "Penetration testing of internal and external networks to uncover security gaps.",
+          link: "#",
+        },
+        {
+          title: "API VAPT",
+          description: "Security testing of APIs to identify issues like improper authentication or data exposure.",
+          link: "#",
+        },
+        {
+          title: "Web Application VAPT",
+          description: "Comprehensive testing of web applications for OWASP Top 10 and other vulnerabilities.",
+          link: "#",
+        },
+      ]
     },
     section_3: {
       heading1: "Compliances",
@@ -88,12 +124,32 @@ const SERVICES = {
     section_2: {
       heading: "Defensive security services we provide",
       services: [
-        "SIEM",
-        "Threat Intel. Service",
-        "Case Management",
-        "DLP",
-        "Digital Forensic",
-      ],
+        {
+          title: "SIEM",
+          description: "Security Information and Event Management system for real-time monitoring and threat detection.",
+          link: "#",
+        },
+        {
+          title: "Threat Intel. Service",
+          description: "Provides actionable threat intelligence to proactively defend against cyber threats.",
+          link: "#",
+        },
+        {
+          title: "Case Management",
+          description: "Centralized handling and tracking of security incidents and investigations.",
+          link: "#",
+        },
+        {
+          title: "DLP",
+          description: "Data Loss Prevention solutions to protect sensitive data from unauthorized access or leaks.",
+          link: "#",
+        },
+        {
+          title: "Digital Forensic",
+          description: "Investigation of cyber incidents through forensic analysis of digital evidence.",
+          link: "#",
+        },
+      ]      
     },
   },
 };

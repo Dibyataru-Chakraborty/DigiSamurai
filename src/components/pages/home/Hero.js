@@ -68,15 +68,15 @@ export default function Hero() {
                 <div
                   className={`${
                     isLastTwo
-                      ? "text-right xl:pl-[36rem] lg:pl-72 md:pl-60 pl-4"
-                      : "text-start 2xl:pr-96 lg:pr-72 md:pr-60 pr-4"
+                      ? "text-right xl:pl-[36rem] lg:pl-72 md:pl-60 pl-4 lg:w-5/6"
+                      : "text-start 2xl:pr-96 lg:pr-72 md:pr-60 pr-4 lg:w-5/6"
                   } container px-4 sm:px-14`}
                 >
                   <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold font-[Josefin Sans]">
                     {slide.title}
                   </h1>
                   <p
-                    className={`mt-6 text-sm sm:text-lg md:text-2xl lg:text-2xl xl:text-3xl font-[Josefin_Sans] ${
+                    className={`mt-6 text-sm sm:text-lg md:text-2xl lg:text-2xl font-[Josefin_Sans] ${
                       isLastTwo ? "" : "max-w-3xl"
                     }`}
                   >
