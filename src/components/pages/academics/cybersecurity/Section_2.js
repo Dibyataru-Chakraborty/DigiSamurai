@@ -65,42 +65,40 @@ export default function Section_2() {
           </h2>
         </div>
         {courses.map((course, index) => (
-          <div
-            key={index}
-            className="mx-auto bg-red-100 rounded-xl shadow-2xl px-8 py-8 relative my-11"
-            style={{ boxShadow: "0 8px 10px rgb(0 0 0 / 0.1)" }}
-          >
-            <h2
-              className="text-2xl lg:text-6xl text-[#4a0a0a] mb-4"
-              style={{ fontFamily: "Josefin Sans" }}
-            >
-              {course.title}
-            </h2>
-            <div className="absolute top-8 right-8 text-right text-sm lg:text-2xl text-gray-700 font-[Jura]">
-              <p>Duration: {course.duration}</p>
-              <p>Level: {course.level}</p>
-            </div>
-            <p className="text-gray-900 text-sm lg:text-2xl font-[Jura] mb-6">
-              {course.description}
-            </p>
-            <ul className="list-disc list-inside text-gray-900 text-sm lg:text-2xl font-[Jura] space-y-1 mb-8">
-              {course.features.map((feature, fIndex) => (
-                <li key={fIndex}>{feature}</li>
-              ))}
-            </ul>
-            <div className="absolute bottom-8 right-8">
-              <Link
-                href={course.link}
-                download
-                className="bg-red-700 text-white px-8 py-3 rounded-full inline-flex items-center space-x-2 mx-auto shadow-md hover:bg-red-800 transition justify-center group relative overflow-hidden"
+          <div key={index} className="py-10">
+            <div className="mx-auto bg-red-100 rounded-xl shadow-2xl px-8 py-8 relative" style={{ boxShadow: "0 8px 10px rgb(0 0 0 / 0.1)" }} >
+              <h2
+                className="text-2xl lg:text-6xl text-[#4a0a0a] mb-4"
+                style={{ fontFamily: "Josefin Sans" }}
               >
-                <span className="group-hover:translate-x-40 transition duration-500">
-                  Download Brochure
-                </span>
-                <div className="absolute inset-0 flex items-center justify-center -translate-x-40 group-hover:translate-x-0 transition duration-500 z-10">
-                  <i className="fas fa-download"></i>
-                </div>
-              </Link>
+                {course.title}
+              </h2>
+              <div className="absolute top-8 right-8 text-right text-sm lg:text-2xl text-gray-700 font-[Jura]">
+                <p>Duration: {course.duration}</p>
+                <p>Level: {course.level}</p>
+              </div>
+              <p className="text-gray-900 text-sm lg:text-2xl font-[Jura] mb-6">
+                {course.description}
+              </p>
+              <ul className="list-disc list-inside text-gray-900 text-sm lg:text-2xl font-[Jura] space-y-1 mb-8">
+                {course.features.map((feature, fIndex) => (
+                  <li key={fIndex}>{feature}</li>
+                ))}
+              </ul>
+              <div className="absolute bottom-8 right-8">
+                <Link
+                  href={course.link}
+                  download
+                  className="bg-red-700 text-white px-8 py-3 rounded-full inline-flex items-center space-x-2 mx-auto shadow-md hover:bg-red-800 transition justify-center group relative overflow-hidden"
+                >
+                  <span className="group-hover:translate-x-40 transition duration-500">
+                    Download Brochure
+                  </span>
+                  <div className="absolute inset-0 flex items-center justify-center -translate-x-40 group-hover:translate-x-0 transition duration-500 z-10">
+                    <i className="fas fa-download"></i>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
         ))}

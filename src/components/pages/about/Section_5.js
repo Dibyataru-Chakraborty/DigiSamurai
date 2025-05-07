@@ -31,8 +31,10 @@ export default function Section_5() {
             <div className="flex flex-col items-center max-w-xs">
               <Image
                 alt="Man in business suit sitting on black and red office chair with certificates on wall behind"
-                className="rounded-xl object-cover h-full w-full"
+                className="rounded-xl object-cover h-full lg:w-56 w-full lg:h-80"
                 src={SouravSir}
+                width={226}
+                height={336}
               />
               <p className="text-3xl mt-4 text-center text-[#3a1a1a]">
                 Sourav Bhaumik
@@ -51,13 +53,15 @@ export default function Section_5() {
             <div className="flex flex-col items-center max-w-xs">
               <Image
                 alt="Woman in business suit sitting on black and red office chair with certificates on wall behind"
-                className="rounded-xl object-cover h-full w-full"
+                className="rounded-xl object-cover h-full lg:w-56 w-full lg:h-80"
                 src={PriyaMaam}
+                width={226}
+                height={336}
               />
               <p className="mt-4 text-center text-3xl text-[#3a1a1a]">
-                Priya Bhaumik
+                Priya Saha
               </p>
-              <p className="text-center text-3xl text-[#3a1a1a]">Designation</p>
+              <p className="text-center text-3xl text-[#3a1a1a]">Partner</p>
               <Link aria-label="LinkedIn profile of Jane Doe" href="#">
                 <Image
                   src={LinkedinIcon}

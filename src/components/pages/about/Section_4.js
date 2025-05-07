@@ -122,7 +122,7 @@ export default function Section_4() {
 
   return (
     <section className="bg-white">
-      <div className="container mx-auto px-8 py-16 w-full p-6">
+      <div className="container mx-auto px-8 py-16 w-full p-6 lg:w-5/6">
         {/* Company Certifications Section */}
         <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between gap-6 md:gap-20 mb-12">
           <h2
@@ -165,7 +165,7 @@ export default function Section_4() {
             </div>
           </div>
           <h2
-            className="text-red-600 font-semibold text-4xl md:text-6xl leading-tight md:leading-snug text-center md:text-left w-full md:w-auto"
+            className="text-red-600 font-semibold text-4xl md:text-6xl leading-tight md:leading-snug text-center md:text-left w-full md:w-auto pt-9"
             style={{ fontFamily: "Josefin Sans" }}
           >
             Team
@@ -195,9 +195,9 @@ export default function Section_4() {
                 key={index}
                 alt={logo.alt}
                 src={logo.src}
-                width={140}
-                height={60}
-                className={`w-[140px] h-[60px] object-contain`}
+                width={160}
+                height={80}
+                className={`w-[160px] h-[80px] object-contain`}
               />
             ))}
           </div>

@@ -9,21 +9,21 @@ export default function Section_5() {
       name: "SAYAK MANDAL",
       role: "SOC Analyst",
       company: "ProcessIT Global Pvt. Ltd",
-      image: "/path/to/image1.jpg",
+      image: "https://avatar.iran.liara.run/public/boy",
       text: "“Completing the cybersecurity training at Digi Samurai was a game-changer for my career. The program offers hands-on learning with expert instructors who bring real-world experience to every lesson. Thanks to their practical approach and strong curriculum, I secured a great job in cybersecurity shortly after graduating. I highly recommend Digi Samurai to anyone serious about entering the field.”",
     },
     {
       name: "Rohan Nandi",
       role: "Auditor",
       company: "Singhi & Co.",
-      image: "/path/to/image2.jpg",
+      image: "https://avatar.iran.liara.run/public/boy",
       text: "“I recently completed the cybersecurity training at Digi Samurai, and it was one of the best decisions for my career. The program combines practical, hands-on experience with expert instruction, making complex topics easy to grasp. The instructors are knowledgeable and bring real-world insights into every lesson. Thanks to their guidance, I landed a great cybersecurity job soon after finishing the course. If you're serious about a career in cybersecurity, Digi Samurai is the place to start.”",
     },
     {
       name: "Raktima Auddi",
       role: "Auditor",
       company: "Singhi & Co.",
-      image: "/path/to/image3.jpg",
+      image: "https://avatar.iran.liara.run/public/girl",
       text: "“Digi Samurai’s hands-on cybersecurity training was a game-changer for my career. The expert instructors made complex concepts easy to grasp, and their real-world insights helped me land a great job soon after completing the course. Highly recommended for practical, high-quality training.”",
     },
   ];
@@ -55,11 +55,14 @@ export default function Section_5() {
 
   return (
     <section className="py-16 relative bg-white">
-      <div className="container mx-auto text-center space-y-16">
+      <div className="container mx-auto text-center space-y-16 lg:w-5/6">
         {/* Static content */}
         <div className="flex flex-col md:flex-row md:items-start md:space-x-8 text-left">
           {/* Left section */}
-          <div className="md:w-1/2 mb-6 md:mb-0 pr-24" style={{ fontFamily: "Josefin Sans" }}>
+          <div
+            className="md:w-1/2 mb-6 md:mb-0 pr-24"
+            style={{ fontFamily: "Josefin Sans" }}
+          >
             <h2 className="text-black tracking-tight pl-4 text-6xl xl:text-8xl font-semibold">
               Industries we
             </h2>
@@ -78,7 +81,10 @@ export default function Section_5() {
           </div>
 
           {/* Right section */}
-          <div className="md:col-span-2 grid grid-cols-2 gap-6 border-l border-[#6B4B48] pl-6 xl:pl-11" style={{ fontFamily: "Josefin Sans" }}>
+          <div
+            className="md:col-span-2 grid grid-cols-2 gap-6 border-l border-[#6B4B48] pl-6 xl:pl-11"
+            style={{ fontFamily: "Josefin Sans" }}
+          >
             <ul className="list-disc list-inside leading-snug space-y-1 lg:text-4xl text-xl text-red-500 font-semibold">
               {[
                 "Information Technology",
@@ -146,7 +152,7 @@ export default function Section_5() {
         </div>
 
         <div
-          className="mt-10 text-white rounded-3xl px-6 py-8 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 max-w-4xl mx-auto"
+          className="mt-10 text-white rounded-3xl px-6 py-8 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 lg:max-w-6xl mx-auto"
           style={{
             backgroundImage:
               "linear-gradient(90deg,rgba(255, 0, 5, 1) 0%, rgba(0, 0, 0, 1) 100%)",
@@ -155,18 +161,18 @@ export default function Section_5() {
           <button
             onClick={handlePrev}
             aria-label="Previous testimonial"
-            className="text-white text-2xl"
+            className="text-white text-2xl md:text-3xl"
           >
             <FaChevronLeft />
           </button>
 
-          <div className="flex items-center space-x-6 flex-1">
+          <div className="flex items-center space-x-6 flex-1 flex-col md:flex-row">
             <Image
               src={testimonials[currentIndex].image}
               alt={`${testimonials[currentIndex].name}'s photo`}
-              className="w-20 h-20 rounded-full object-cover"
-              width={80}
-              height={80}
+              className="w-28 h-28 rounded-full object-cover mb-4 md:mb-0"
+              width={100}
+              height={100}
             />
             <div className="text-left">
               <p className="font-mono text-lg font-semibold">
@@ -185,7 +191,7 @@ export default function Section_5() {
           <button
             onClick={handleNext}
             aria-label="Next testimonial"
-            className="text-white text-2xl"
+            className="text-white text-2xl md:text-3xl"
           >
             <FaChevronRight />
           </button>

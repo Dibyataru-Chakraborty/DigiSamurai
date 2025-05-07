@@ -51,14 +51,14 @@ export default function FOOter() {
                 </Link>
                 <Link
                   className="text-[16px] font-light hover:underline w-max"
-                  href="#"
+                  href="/services"
                   style={{ fontFamily: "Josefin Sans" }}
                 >
                   Services
                 </Link>
                 <Link
                   className="text-[16px] font-light hover:underline w-max"
-                  href="#"
+                  href="/academics"
                   style={{ fontFamily: "Josefin Sans" }}
                 >
                   Academics
@@ -132,7 +132,7 @@ export default function FOOter() {
                     className="hover:text-[#d9b7b9]"
                     href="#"
                   >
-                    <i className="fab fa-twitter" />
+                    <i className="fab fa-x-twitter" />
                   </Link>
                   <Link
                     aria-label="Instagram"

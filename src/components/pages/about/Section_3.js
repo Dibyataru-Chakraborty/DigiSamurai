@@ -2,7 +2,7 @@ export default function Section_3() {
   return (
     <>
       <section className="pb-16 bg-white">
-        <div className="container mx-auto px-8 py-16">
+        <div className="container mx-auto px-8 py-16 lg:w-5/6">
           <h2 className="text-6xl mb-12 bg-clip-text text-transparent font-semibold text-center" style={{ fontFamily: "Josefin Sans" }}>
             <span className="bg-clip-text text-transparent" style={{
             backgroundImage:

@@ -22,17 +22,17 @@ export default function Section_1({ points, heading }) {
           </ul>
 
           {/* Right: Heading */}
-          <div className="mt-6 md:mt-0 text-center md:text-right md:max-w-sm w-full md:pl-10">
+          <div className="mt-6 md:mt-0 text-center md:text-right md:max-w-lg w-full md:pl-10">
             <h2
-              className="xl:text-5xl text-4xl font-bold py-5 bg-clip-text text-transparent leading-tight"
+              className="lg:text-7xl text-4xl py-5 bg-clip-text text-transparent leading-tight"
               style={{
                 fontFamily: "Josefin Sans",
                 backgroundImage:
                   "linear-gradient(90deg,rgba(255, 0, 5, 1) 0%, rgba(0, 0, 0, 1) 82%)",
               }}
             >
-              Why entrust <br className="md:hidden" />
-              Digi Samurai
+              Why entrust <br className="md:active" />
+              <span className="font-bold">Digi Samurai</span>
             </h2>
           </div>
         </div>

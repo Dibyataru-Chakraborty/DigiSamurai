@@ -5,7 +5,7 @@ import illustration from "@/assets/img/About_Illustration.png";
 export default function Section_1() {
   return (
     <section className="pt-16 bg-white">
-      <div className="container mx-auto text-left">
+      <div className="container mx-auto text-left lg:w-5/6">
         <div className="flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8 mx-16">
           <div className="lg:w-1/2 w-full text-center lg:text-left">
             <h2

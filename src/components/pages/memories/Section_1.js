@@ -111,7 +111,7 @@ export default function Section_1() {
 
   return (
     <section className="pt-7 bg-white">
-      <div className="container mx-auto text-left">
+      <div className="container mx-auto text-left lg:w-5/6">
         {/* Year Tabs */}
         <div className="flex justify-center items-center space-x-6 pb-14 text-gray-500 select-none">
           {eventData.map((yearGroup, index) => (

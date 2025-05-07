@@ -2,8 +2,8 @@
 
 export default function Section_4() {
   return (
-    <section className="py-16 relative  bg-white">
-      <div className="container mx-auto text-center items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8" style={{
+    <section className="py-16 relative bg-white">
+      <div className="container mx-auto flex flex-col lg:w-5/6 text-center items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8" style={{
         fontFamily: "Josefin Sans",
       }}>
         <h2 className="text-5xl font-bold bg-clip-text text-transparent"
@@ -12,27 +12,27 @@ export default function Section_4() {
           }}>
           2500+ Projects Completed
         </h2>
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 border-t border-b border-black">
-          <div className="border-r border-black px-4">
-            <div className="my-8 space-y-4 lg:space-y-0 lg:space-x-8">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 lg:border-t lg:border-b lg:border-black">
+          <div className="lg:border-r lg:border-black px-4">
+            <div className="my-8">
               <div className="text-5xl md:font-bold">3500+</div>
               <div className="text-3xl">Customers served</div>
             </div>
           </div>
-          <div className="border-r border-black px-4">
-            <div className="my-8 space-y-4 lg:space-y-0 lg:space-x-8">
+          <div className="lg:border-r lg:border-black px-4">
+            <div className="my-8">
               <div className="text-5xl md:font-bold">350+</div>
               <div className="text-3xl">Cybersecurity experts</div>
             </div>
           </div>
-          <div className="border-r border-black px-4">
-            <div className="my-8 space-y-4 lg:space-y-0 lg:space-x-8">
+          <div className="lg:border-r lg:border-black px-4">
+            <div className="my-8">
               <div className="text-5xl md:font-bold">100+</div>
               <div className="text-3xl">Trained specialists</div>
             </div>
           </div>
           <div className="px-4">
-            <div className="my-8 space-y-4 lg:space-y-0 lg:space-x-8">
+            <div className="my-8">
               <div className="text-5xl md:font-bold">150%</div>
               <div className="text-3xl">Customer retention</div>
             </div>
