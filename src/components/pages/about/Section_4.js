@@ -1,7 +1,10 @@
 import Image from "next/image";
-import ISO_27001_2013_sm from "@/assets/logo/ISO-27001--2013-sm.png";
-import ISO_9001_2015_sm from "@/assets/logo/ISO-9001-2015-sm.png";
-import ISO_20000_1_2018_sm from "@/assets/logo/ISO-20000-1-2018-sm.png";
+import ISO_27001_2022 from "@/assets/Certificate/ISO-27001-2022.jpg";
+import ISO_9001_2015 from "@/assets/Certificate/ISO-9001-2015.jpg";
+import ISO_20000_1_2018 from "@/assets/Certificate/ISO-20000-1-2018.jpg";
+import ISO_22301_2019 from "@/assets/Certificate/ISO-22301-2019.jpg";
+import ISO_27701_2022 from "@/assets/Certificate/ISO-27701-2022.jpg";
+import MSME_Registration from "@/assets/Certificate/MSME_Registration.jpg";
 
 import CEH from "@/assets/logo/CEH.jpg";
 import cfcs from "@/assets/logo/cfcs.jpg";
@@ -24,30 +27,29 @@ import kolkatapolice from "@/assets/logo/kolkatapolice.png";
 export default function Section_4() {
   const certificates = [
     {
-      alt: "Certificate of Registration ISO/IEC 27001:2013",
-      src: ISO_27001_2013_sm.src,
+      alt: "Certificate of Registration ISO/IEC 27001:2022",
+      src: ISO_27001_2022,
     },
     {
       alt: "Certificate of Registration Quality Management System ISO 9001:2015",
-      src: ISO_9001_2015_sm.src,
+      src: ISO_9001_2015,
     },
     {
       alt: "Certificate of Registration ISO/IEC 20000-1:2018",
-      src: ISO_20000_1_2018_sm.src,
+      src: ISO_20000_1_2018,
     },
     {
-      alt: "Certificate of Registration ISO/IEC 20000-1:2018",
-      src: ISO_20000_1_2018_sm.src,
+      alt: "Certificate of Registration ISO 22301:2019",
+      src: ISO_22301_2019,
     },
     {
-      alt: "Certificate of Registration ISO/IEC 20000-1:2018",
-      src: ISO_20000_1_2018_sm.src,
+      alt: "Certificate of Registration ISO/IEC 27701:2022",
+      src: ISO_27701_2022,
     },
     {
-      alt: "Certificate of Registration ISO/IEC 20000-1:2018",
-      src: ISO_20000_1_2018_sm.src,
+      alt: "MSME Registration Certificate",
+      src: MSME_Registration,
     },
-    // Repeat or add more as needed
   ];
 
   const Team_certificates = [
@@ -148,9 +150,10 @@ export default function Section_4() {
             </div>
           </div>
         </div>
+
         {/* Team Certifications Section */}
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between gap-6 md:gap-20 mb-12">
-          <div className="overflow-x-auto overflow-y-hidden no-scrollbar">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-6 md:gap-20 mb-12">
+          <div className="flex-1 flex justify-center md:justify-end overflow-x-auto no-scrollbar">
             <div className="flex gap-6 animate-scroll">
               {Team_certificates.map((cert, index) => (
                 <Image
@@ -159,13 +162,13 @@ export default function Section_4() {
                   src={cert.src}
                   width={160}
                   height={80}
-                  className="w-[160px] h-[267px] object-contain"
+                  className="w-[160px] h-[80px] object-contain"
                 />
               ))}
             </div>
           </div>
           <h2
-            className="text-red-600 font-semibold text-4xl md:text-6xl leading-tight md:leading-snug text-center md:text-left w-full md:w-auto pt-9"
+            className="text-red-600 font-semibold text-4xl md:text-6xl leading-tight text-center md:text-left"
             style={{ fontFamily: "Josefin Sans" }}
           >
             Team
@@ -173,6 +176,7 @@ export default function Section_4() {
             Certifications
           </h2>
         </div>
+
         {/* Our Clients Section */}
         <div className="flex flex-col items-center mb-8">
           <h2

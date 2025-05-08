@@ -25,7 +25,7 @@ export default function Section_5() {
             Our leadership
           </h2>
           <div
-            className="flex flex-col sm:flex-row justify-around items-center gap-8"
+            className="flex flex-col sm:flex-row justify-evenly items-center gap-8"
             style={{ fontFamily: "Jura" }}
           >
             <div className="flex flex-col items-center max-w-xs">

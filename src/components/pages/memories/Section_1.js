@@ -102,6 +102,7 @@ const eventData = [
 ];
 
 export default function Section_1() {
+  
   const currentYear = new Date().getFullYear();
   const [selectedYear, setSelectedYear] = useState(currentYear);
 
