@@ -1,6 +1,6 @@
 "use client";
 
-import { FloatingNav } from "@/components/ui/floating-navbar";
+import { FloatingNav, MobileNav } from "@/components/ui/floating-navbar";
 import { IconHome, IconDeviceDesktopCode , IconMail, IconInfoSquareRounded, IconLibraryPhoto, IconBookmark } from "@tabler/icons-react";
 import digisamurai from "@/assets/logo/DigiSamurai.png";
 
@@ -45,6 +45,7 @@ export default function NavBar() {
   return (
     <nav>
       <FloatingNav navItems={navItems} logo={digisamurai}/>
+      <MobileNav navItems={navItems} logo={digisamurai} />
     </nav>
   );
 }

@@ -24,7 +24,6 @@ import ELASTIC from "@/assets/logo/ELASTIC.png"
 import CORTEX from "@/assets/logo/cortex.png"
 import HIVE from "@/assets/logo/HIVE.png"
 
-// Mock service data - Ideally from CMS or API
 const SERVICES = {
   offensive_security: {
     hero: {
@@ -198,6 +197,11 @@ const SERVICES = {
     }
   },
 };
+
+export async function generateStaticParams() {
+  return Object.keys(SERVICES).map(slug => ({ slug }));
+}
+
 
 export default async function ServicePage({ params }) {
   const { slug } = params;

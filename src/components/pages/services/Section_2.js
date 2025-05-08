@@ -80,7 +80,7 @@ export default function Section_2() {
                           Check Details
                         </span>
                         <div className="absolute inset-0 flex items-center justify-center -translate-x-40 group-hover:translate-x-0 transition duration-500 z-10">
-                          <i class="fa-solid fa-circle-info"></i>
+                          <i className="fa-solid fa-circle-info"></i>
                         </div>
                       </Link>
                     </div>
