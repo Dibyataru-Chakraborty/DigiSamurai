@@ -13,6 +13,7 @@
     "@tabler/icons-react": "^3.26.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.15.0",
+    "fs-extra": "^11.3.0",
     "graphql": "^16.10.0",
     "graphql-request": "^7.1.2",
     "motion": "^12.10.0",
