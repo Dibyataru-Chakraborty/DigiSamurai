@@ -6,25 +6,143 @@ import Section_2 from "@/components/pages/services/sub/Section_2";
 import Section_4 from "@/components/pages/services/sub/Section_4";
 import Section_3 from "@/components/pages/services/sub/Section_3";
 
-import ISO from "@/assets/logo/iso.jpg"
-import EU from "@/assets/logo/eugdpr.jpg"
-import AICPA from "@/assets/logo/aicpa.jpg"
-import HIPAA from "@/assets/logo/hipaa.jpg"
-import DSS from "@/assets/logo/dss.jpg"
+import ISO from "@/assets/logo/iso.jpg";
+import EU from "@/assets/logo/eugdpr.jpg";
+import AICPA from "@/assets/logo/aicpa.jpg";
+import HIPAA from "@/assets/logo/hipaa.jpg";
+import DSS from "@/assets/logo/dss.jpg";
 
-import NIST from "@/assets/logo/nist.jpg"
-import OWASP from "@/assets/logo/owasp.jpg"
-import PTES from "@/assets/logo/ptes.jpg"
-import OSSTMM3 from "@/assets/logo/osstmm3.jpg"
-import ISSAF from "@/assets/logo/issaf.jpg"
+import NIST from "@/assets/logo/nist.jpg";
+import OWASP from "@/assets/logo/owasp.jpg";
+import PTES from "@/assets/logo/ptes.jpg";
+import OSSTMM3 from "@/assets/logo/osstmm3.jpg";
+import ISSAF from "@/assets/logo/issaf.jpg";
 
-import MSIP from "@/assets/logo/MSIP.png"
-import WAZUH from "@/assets/logo/WAZUH.png"
-import ELASTIC from "@/assets/logo/ELASTIC.png"
-import CORTEX from "@/assets/logo/cortex.png"
-import HIVE from "@/assets/logo/HIVE.png"
+import MSIP from "@/assets/logo/MSIP.png";
+import WAZUH from "@/assets/logo/WAZUH.png";
+import ELASTIC from "@/assets/logo/ELASTIC.png";
+import CORTEX from "@/assets/logo/cortex.png";
+import HIVE from "@/assets/logo/HIVE.png";
 
 const SERVICES = {
+  security_partnership: {
+    hero: {
+      title: "Our Services | Cyber Security",
+      heading: "Explore Our Comprehensive Cyber Security Services",
+      broucher: "#",
+      service_request: "#",
+    },
+    section_1: {
+      heading: null,
+      points: [
+        
+      ]
+    },
+    section_2: {
+      heading: null,
+      services: [
+        // {
+        //   title: "",
+        //   description: "",
+        //   link: "#"
+        // }
+      ]
+    },
+    section_3: {
+      heading1: "",
+      heading2: "",
+      sections: [
+        // {
+        //   heading: "",
+        //   items: [
+        //     {
+        //       name: "",
+        //       logo: ""
+        //     }
+        //   ]
+        // }
+      ]
+    }
+  },
+  
+  compliance_security: {
+    hero: {
+      title: "Our Services | Cyber Security",
+      heading: "Explore Our Comprehensive Cyber Security Services",
+      broucher: "#",
+      service_request: "#",
+    },
+    section_1: {
+      heading: null,
+      points: [
+      ]
+    },
+    section_2: {
+      heading: null,
+      services: [
+        // {
+        //   title: "",
+        //   description: "",
+        //   link: "#"
+        // }
+      ]
+    },
+    section_3: {
+      heading1: "",
+      heading2: "",
+      sections: [
+        // {
+        //   heading: "",
+        //   items: [
+        //     {
+        //       name: "",
+        //       logo: ""
+        //     }
+        //   ]
+        // }
+      ]
+    }
+  },
+
+  capacity_building: {
+    hero: {
+      title: "Our Services | Cyber Security",
+      heading: "Explore Our Comprehensive Cyber Security Services",
+      broucher: "#",
+      service_request: "#",
+    },
+    section_1: {
+      heading: null,
+      points: [
+      ]
+    },
+    section_2: {
+      heading: null,
+      services: [
+        // {
+        //   title: "",
+        //   description: "",
+        //   link: "#"
+        // }
+      ]
+    },
+    section_3: {
+      heading1: "",
+      heading2: "",
+      sections: [
+        // {
+        //   heading: "",
+        //   items: [
+        //     {
+        //       name: "",
+        //       logo: ""
+        //     }
+        //   ]
+        // }
+      ]
+    }
+  },
+
   offensive_security: {
     hero: {
       title: "Offensive Security",
@@ -50,50 +168,59 @@ const SERVICES = {
       services: [
         {
           title: "Active Directory VAPT",
-          description: "Assessment of Active Directory environments to identify vulnerabilities and misconfigurations.",
+          description:
+            "Assessment of Active Directory environments to identify vulnerabilities and misconfigurations.",
           link: "#",
         },
         {
           title: "Cloud VAPT",
-          description: "Vulnerability assessment and penetration testing for cloud environments like AWS, Azure, and GCP.",
+          description:
+            "Vulnerability assessment and penetration testing for cloud environments like AWS, Azure, and GCP.",
           link: "#",
         },
         {
           title: "WiFi VAPT",
-          description: "Testing of wireless networks to identify risks such as rogue access points or weak encryption.",
+          description:
+            "Testing of wireless networks to identify risks such as rogue access points or weak encryption.",
           link: "#",
         },
         {
           title: "Mobile Application VAPT",
-          description: "Security assessment of mobile apps for vulnerabilities on Android and iOS platforms.",
+          description:
+            "Security assessment of mobile apps for vulnerabilities on Android and iOS platforms.",
           link: "#",
         },
         {
           title: "Secure Config. Review",
-          description: "Evaluation of system configurations against security best practices and compliance standards.",
+          description:
+            "Evaluation of system configurations against security best practices and compliance standards.",
           link: "#",
         },
         {
           title: "Secure Code Review (SAST)",
-          description: "Static analysis of source code to detect security flaws early in the development lifecycle.",
+          description:
+            "Static analysis of source code to detect security flaws early in the development lifecycle.",
           link: "#",
         },
         {
           title: "Network VAPT",
-          description: "Penetration testing of internal and external networks to uncover security gaps.",
+          description:
+            "Penetration testing of internal and external networks to uncover security gaps.",
           link: "#",
         },
         {
           title: "API VAPT",
-          description: "Security testing of APIs to identify issues like improper authentication or data exposure.",
+          description:
+            "Security testing of APIs to identify issues like improper authentication or data exposure.",
           link: "#",
         },
         {
           title: "Web Application VAPT",
-          description: "Comprehensive testing of web applications for OWASP Top 10 and other vulnerabilities.",
+          description:
+            "Comprehensive testing of web applications for OWASP Top 10 and other vulnerabilities.",
           link: "#",
         },
-      ]
+      ],
     },
     section_3: {
       heading1: "Compliances",
@@ -109,7 +236,7 @@ const SERVICES = {
             { name: "AICPA SOC 2", logo: AICPA },
             { name: "HIPAA", logo: HIPAA },
             { name: "PCI DSS", logo: DSS },
-          ]
+          ],
         },
         {
           heading: "Approach",
@@ -119,11 +246,10 @@ const SERVICES = {
             { name: "PTES", logo: PTES },
             { name: "OSSTMM3", logo: OSSTMM3 },
             { name: "ISSAF", logo: ISSAF },
-          ]
-        }
-      ]
-    }
-    
+          ],
+        },
+      ],
+    },
   },
 
   defensive_security: {
@@ -156,30 +282,35 @@ const SERVICES = {
       services: [
         {
           title: "SIEM",
-          description: "Security Information and Event Management system for real-time monitoring and threat detection.",
+          description:
+            "Security Information and Event Management system for real-time monitoring and threat detection.",
           link: "#",
         },
         {
           title: "Threat Intel. Service",
-          description: "Provides actionable threat intelligence to proactively defend against cyber threats.",
+          description:
+            "Provides actionable threat intelligence to proactively defend against cyber threats.",
           link: "#",
         },
         {
           title: "Case Management",
-          description: "Centralized handling and tracking of security incidents and investigations.",
+          description:
+            "Centralized handling and tracking of security incidents and investigations.",
           link: "#",
         },
         {
           title: "DLP",
-          description: "Data Loss Prevention solutions to protect sensitive data from unauthorized access or leaks.",
+          description:
+            "Data Loss Prevention solutions to protect sensitive data from unauthorized access or leaks.",
           link: "#",
         },
         {
           title: "Digital Forensic",
-          description: "Investigation of cyber incidents through forensic analysis of digital evidence.",
+          description:
+            "Investigation of cyber incidents through forensic analysis of digital evidence.",
           link: "#",
         },
-      ]      
+      ],
     },
     section_3: {
       sections: [
@@ -191,29 +322,21 @@ const SERVICES = {
             { name: "ELASTIC", logo: ELASTIC },
             { name: "CORTEX", logo: CORTEX },
             { name: "HIVE", logo: HIVE },
-          ]
-        }
-      ]
-    }
+          ],
+        },
+      ],
+    },
   },
 };
 
 export async function generateStaticParams() {
-  return Object.keys(SERVICES).map(slug => ({ slug }));
+  return Object.keys(SERVICES).map((slug) => ({ slug }));
 }
 
-
 export default async function ServicePage({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
 
-  const serviceData = SERVICES[slug] || {
-    hero: {
-      title: "Our Services | Cyber Security",
-      heading: "Explore Our Comprehensive Cyber Security Services",
-      broucher: "#",
-      service_request: "#",
-    },
-  };
+  const serviceData = SERVICES[slug]
 
   return (
     <>
@@ -221,8 +344,8 @@ export default async function ServicePage({ params }) {
       <Hero {...serviceData.hero} />
       <Section_1 {...serviceData.section_1} />
       <Section_2 {...serviceData.section_2} />
-      <Section_3 {...serviceData.section_3}/>
-      <Section_4/>
+      <Section_3 {...serviceData.section_3} />
+      <Section_4 />
       <FOOter />
     </>
   );

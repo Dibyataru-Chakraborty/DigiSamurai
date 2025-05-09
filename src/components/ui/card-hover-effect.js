@@ -11,7 +11,7 @@ export const HoverEffect = ({ items, className }) => {
   return (
     <div className={cn("py-10", className)}>
       {!items || items.length === 0 ? (
-        <div className="text-center text-5xl font-semibold text-gray-500 py-8 w-full">
+        <div className="text-center lg:text-5xl text-3xl font-semibold text-gray-500 py-8 w-full">
           🚧 Coming Soon 🚧
         </div>
       ) : (

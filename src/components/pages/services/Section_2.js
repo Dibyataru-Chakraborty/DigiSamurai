@@ -7,7 +7,7 @@ const services = [
   {
     title: "360° Security Partnership",
     image: academicscourses, // Your imported image
-    brochureLink: "/services/360_security_partnership",
+    brochureLink: "/services/security_partnership",
   },
   {
     title: "Compliance Security",

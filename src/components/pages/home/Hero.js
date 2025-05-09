@@ -54,7 +54,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden text-white">
+    <section className="relative min-h-[290px] md:min-h-[450px] lg:h-screen overflow-hidden text-white bg-[#010102]">
       {/* Background Carousel */}
       <Slider {...settings}>
         {slides.map((slide, index) => {
@@ -62,7 +62,8 @@ export default function Hero() {
           return (
             <div key={index}>
               <div
-                className="h-screen bg-cover bg-center flex items-center justify-center"
+                // className="h-screen bg-cover bg-center flex items-center justify-center"
+                className="min-h-[200px] md:min-h[600px] lg:h-screen bg-contain md:bg-cover bg-center flex items-center justify-center"
                 style={{ backgroundImage: `url(${slide.image})` }}
               >
                 <div
@@ -72,7 +73,7 @@ export default function Hero() {
                       : "text-start 2xl:pr-96 lg:pr-72 md:pr-60 pr-4 lg:w-5/6"
                   } container px-4 sm:px-14`}
                 >
-                  <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold font-[Josefin Sans]">
+                  <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold font-[Josefin Sans]">
                     {slide.title}
                   </h1>
                   <p
