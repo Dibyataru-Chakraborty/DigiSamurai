@@ -8,11 +8,11 @@ import hero2 from "@/assets/img/Hero2.png";
 import hero3 from "@/assets/img/Hero3.png";
 import hero4 from "@/assets/img/Hero4.png";
 import msme from "@/assets/logo/MSME.png";
-import iso9001 from "@/assets/logo/ISO9001.png";
-import iso200001 from "@/assets/logo/ISO200001.png";
-import iso27001 from "@/assets/logo/ISO27001.png";
-import iso27701 from "@/assets/logo/ISO27701.png";
-import iso22301 from "@/assets/logo/ISO22301.png";
+import iso9001 from "@/assets/logo/ISO9001.jpg";
+import iso200001 from "@/assets/logo/ISO200001.jpg";
+import iso27001 from "@/assets/logo/ISO27001.jpg";
+import iso27701 from "@/assets/logo/ISO27701.jpg";
+import iso22301 from "@/assets/logo/ISO22301.jpg";
 
 const slides = [
   {
@@ -96,20 +96,27 @@ export default function Hero() {
         <p className="text-xs sm:text-lg md:text-2xl font-[Josefin_Sans] mb-2">
           We are certified by
         </p>
-        <div className="flex justify-between w-full max-w-6xl min-w-4xl">
-          {[iso27001, iso27701, iso22301, iso200001, iso9001, , msme].map(
-            (logo, index) => (
-              <div
-                key={index}
-                className="relative 2xl:w-[120px] 2xl:h-[70px] sm:w-[80px] sm:h-[60px] w-[60px] h-[40px] flex items-center justify-center mx-2"
-              >
-                <Image
-                  src={logo}
-                  alt={`Certification ${index + 1}`}
-                  className="object-contain filter brightness-100 bg-white rounded-lg h-full"
-                />
-              </div>
-            )
+        <div className="pt-6 flex justify-between w-full max-w-6xl min-w-4xl">
+          {[iso27001, iso27701, iso22301, iso200001, iso9001, msme].map(
+            (logo, index) => {
+              const isMsme = logo === msme;
+
+              const width = isMsme ? 120 : 67;
+              const height = isMsme ? 70 : 64;
+
+              return (
+                <div
+                  key={index}
+                  className={`relative w-[${width}px] h-[${height}px] flex items-center justify-center mx-2`}
+                >
+                  <Image
+                    src={logo}
+                    alt={`Certification ${index + 1}`}
+                    className="object-contain filter brightness-100 bg-white rounded-lg h-full"
+                  />
+                </div>
+              );
+            }
           )}
         </div>
       </div>

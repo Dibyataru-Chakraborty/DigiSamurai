@@ -39,7 +39,7 @@ export default function Section_5() {
               <p className="text-3xl mt-4 text-center text-[#3a1a1a]">
                 Sourav Bhaumik
               </p>
-              <p className="text-center text-3xl text-[#3a1a1a]">Designation</p>
+              <p className="text-center text-3xl text-[#3a1a1a]">Director</p>
               <Link aria-label="LinkedIn profile of John Doe" href="https://www.linkedin.com/in/sourav-bhaumik-8732bb168/">
                 <Image
                   src={LinkedinIcon}

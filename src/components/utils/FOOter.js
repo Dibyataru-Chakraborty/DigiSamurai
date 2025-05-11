@@ -148,7 +148,7 @@ export default function FOOter() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-6 flex flex-col md:flex-row justify-between items-center text-[10px] text-[#a18484]">
+        <div className="mt-6 py-8 flex flex-col md:flex-row justify-between items-center text-[10px] text-[#a18484]">
           <div className="flex space-x-4 mt-2 md:mt-0">
             <Link href="#" className="hover:underline">
               Cookies Settings
@@ -160,7 +160,7 @@ export default function FOOter() {
               Legal Notice
             </Link>
           </div>
-          <span>©DIGISAMURAI 2022</span>
+          <span>© Digi Samurai 2025</span>
           <div></div>
         </div>
       </section>
