@@ -20,12 +20,32 @@ export default function Section_2() {
             To keep updated, follow us on
           </h2>
         </div>
-        <div className="mt-4 flex justify-center space-x-16 text-[#7f2a1f] lg:text-7xl text-2xl sm:text-5xl">
-          <Link href={"https://www.linkedin.com/in/digisamurai/"}><i className="fab fa-linkedin-in"></i></Link>
-          <Link href={"https://www.youtube.com/@digi_samurai"}></Link><i className="fab fa-youtube"></i>
-          <Link href={"https://www.facebook.com/digisamurais"}></Link><i className="fab fa-facebook-f"></i>
-          <Link href={""}></Link><i className="fab fa-x-twitter"></i>
-          <Link href={"https://www.instagram.com/digi.samurai_/"}></Link><i className="fab fa-instagram"></i>
+        <div className="mt-4 flex justify-center items-center lg:space-x-24 space-x-16 text-[#7f2a1f] lg:text-7xl text-3xl sm:text-5xl">
+          <span>
+            <Link href={"https://www.linkedin.com/in/digisamurai/"}>
+              <i className="fab fa-linkedin-in"></i>
+            </Link>
+          </span>
+          <span>
+            <Link href={"https://www.youtube.com/@digi_samurai"}>
+              <i className="fab fa-youtube"></i>
+            </Link>
+          </span>
+          <span>
+            <Link href={"https://www.facebook.com/digisamurais"}>
+              <i className="fab fa-facebook-f"></i>
+            </Link>
+          </span>
+          <span>
+            <Link href={""}>
+              <i className="fab fa-x-twitter"></i>
+            </Link>
+          </span>
+          <span>
+            <Link href={"https://www.instagram.com/digi.samurai_/"}>
+              <i className="fab fa-instagram"></i>
+            </Link>
+          </span>
         </div>
       </div>
     </section>

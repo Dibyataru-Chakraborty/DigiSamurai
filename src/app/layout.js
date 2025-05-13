@@ -1,9 +1,8 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/global.css";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,7 +46,6 @@ export const metadata = {
   },
 };
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -74,7 +72,11 @@ export default function RootLayout({ children }) {
         />
 
         {/* Google Fonts - Josefin Sans */}
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"/>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+          rel="stylesheet"
+        />
+        
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

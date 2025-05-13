@@ -26,7 +26,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #f3f4f6;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
@@ -56,11 +56,8 @@ body {
 
 /* Auto scroll animation */
 @keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
+  to {
+    transform: translate(calc(-50% - 0.5rem));
   }
 }
 
@@ -71,5 +68,6 @@ body {
 .animate-scroll:hover {
   animation-play-state: paused;
 }
+
 
 

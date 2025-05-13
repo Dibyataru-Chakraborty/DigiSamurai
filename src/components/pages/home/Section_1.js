@@ -35,13 +35,15 @@ export default function Section_1() {
               {/* Text Content */}
               <div className="w-full lg:w-3/4 pl-0 lg:pl-4 text-center lg:text-left">
                 <p className="mt-4 text-lg lg:text-xl">
-                  Our enthusiasm for innovation and perfection drives us to be a
-                  leading firm in cybersecurity and compliance solutions.
+                  We are committed to delivering trusted cybersecurity and
+                  compliance solutions through a combination of advanced
+                  technologies, proven methodologies, and industry best
+                  practices.
                 </p>
                 <p className="mt-4 text-lg lg:text-xl">
-                  We employ state-of-the-art technologies and sophisticated
-                  procedures to secure all assets and guarantee regulatory
-                  compliance.
+                  Our focus is on protecting critical assets, mitigating risks,
+                  and ensuring adherence to global regulatory standards with
+                  precision and reliability.
                 </p>
               </div>
             </div>

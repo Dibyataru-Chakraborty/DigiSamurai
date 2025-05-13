@@ -34,7 +34,7 @@ export const FloatingNav = ({ navItems, className, logo }) => {
         animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
         transition={{ duration: 0.2 }}
         className={cn(
-          `hidden lg:flex bg-gray-100 flex-wrap items-center justify-between fixed top-5 inset-x-4 sm:inset-x-8 lg:inset-x-16 px-3 py-2 z-[5000]
+          `hidden xl:flex bg-gray-100 flex-wrap items-center justify-between fixed top-5 inset-x-4 sm:inset-x-8 lg:inset-x-16 px-3 py-2 z-[5000]
           max-w-screen border border-transparent backdrop-blur-sm
           rounded-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
           transition-colors duration-300 font-[Jura]`,
@@ -106,7 +106,7 @@ export const MobileNav = ({ navItems, logo }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-100 border-gray-200  lg:hidden">
+    <nav className="bg-gray-100 border-gray-200  xl:hidden">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center space-x-3">
           <Image
@@ -119,7 +119,7 @@ export const MobileNav = ({ navItems, logo }) => {
         </Link>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-red-600 font-semibold rounded-lg lg:hidden hover:text-primary dark:text-gray-400 dark:hover:bg-gray-700"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-red-600 font-semibold rounded-lg hover:text-primary dark:text-gray-400 dark:hover:bg-gray-700"
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -138,7 +138,7 @@ export const MobileNav = ({ navItems, logo }) => {
           </svg>
         </button>
         {menuOpen && (
-          <div className="w-full mt-4 lg:hidden">
+          <div className="w-full mt-4 xl:hidden">
             <ul className="font-medium flex flex-col p-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
               {navItems.map((item, idx) => (
                 <li key={idx}>
