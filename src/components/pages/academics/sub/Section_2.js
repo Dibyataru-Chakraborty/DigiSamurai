@@ -21,7 +21,7 @@ export default function Section_2({courses}) {
           courses.map((course, index) => (
             <div key={index} className="py-10">
               <div
-                className="flex flex-col lg:flex-row mx-auto bg-red-100 rounded-xl shadow-2xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8 relative space-y-4 lg:space-y-0 lg:space-x-6"
+                className="flex flex-col xl:flex-row mx-auto bg-red-100 rounded-xl shadow-2xl px-4 sm:px-6 xl:px-8 py-6 sm:py-8 relative space-y-4 xl:space-y-0 xl:space-x-6"
                 style={{ boxShadow: "0 8px 10px rgb(0 0 0 / 0.1)" }}
               >
                 <div className="flex-1">
@@ -43,7 +43,7 @@ export default function Section_2({courses}) {
                   </ul>
                 </div>
 
-                <div className="lg:absolute top-4 right-6 text-sm sm:text-base lg:text-2xl text-gray-700 font-[Jura] lg:text-right">
+                <div className="xl:absolute top-4 right-6 text-sm sm:text-base lg:text-2xl text-gray-700 font-[Jura] xl:text-right">
                   <p>Duration: {course.duration}</p>
                   <p>Level: {course.level}</p>
                 </div>

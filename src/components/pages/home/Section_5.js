@@ -69,7 +69,7 @@ export default function Section_5() {
             <h1 className="text-[#6B4B48] leading-tight mt-1 tracking-tight pl-4 text-6xl xl:text-9xl font-semibold">
               Served
             </h1>
-            <div className="flex lg:space-x-12 space-x-4 mt-6 justify-end pr-0 xl:pr-6">
+            <div className="px-4 flex lg:space-x-12 space-x-4 mt-6 justify-end pr-0 xl:pr-6">
               {[12, 45, -12].map((deg, i) => (
                 <div
                   key={i}

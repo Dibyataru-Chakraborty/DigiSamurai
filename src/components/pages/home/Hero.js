@@ -62,8 +62,7 @@ export default function Hero() {
             const isLastTwo = index >= slides.length - 2;
             return (
               <div key={index}>
-                <div
-                  className="min-h-[200px] md:min-h-[600px] lg:h-screen bg-cover bg-center flex items-center justify-center"
+                <div className="min-h-[200px] md:min-h-[600px] lg:h-screen bg-cover bg-center flex items-center justify-center"
                   style={{ backgroundImage: `url(${slide.image})` }}
                 >
                   <div

@@ -9,7 +9,7 @@ export default function Section_3() {
           style={{ backgroundColor: "#997677" }}
         ></div>
 
-        <div className="flex flex-col lg:flex-row items-center justify-center mt-[6rem] space-y-8 lg:space-y-0 lg:space-x-8 mx-4 lg:mx-16">
+        <div className="px-2 flex flex-col lg:flex-row items-center justify-center mt-[6rem] space-y-8 lg:space-y-0 lg:space-x-8 mx-4 lg:mx-16">
           <div className="text-left">
             <h1
               className="text-5xl bg-clip-text text-transparent-bold"
@@ -41,7 +41,7 @@ export default function Section_3() {
         </div>
 
         <div
-          className="mt-[6rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="mt-[6rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4"
           style={{ fontFamily: "Jura" }}
         >
           {[
