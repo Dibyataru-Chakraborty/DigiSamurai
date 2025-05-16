@@ -13,7 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Memories | Digi Samurai",
+  title: "Services | Digi Samurai",
+  description: "Explore our Cyber Security services to protect your digital assets.",
+  keywords: "Cyber Security, Digital Protection, Services",
 };
 
 export default function RootLayout({ children }) {

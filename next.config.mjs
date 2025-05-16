@@ -7,6 +7,7 @@ const nextConfig = {
         hostname: "avatar.iran.liara.run",
       },
     ],
+    domains: ['images.ctfassets.net'],
     unoptimized: true
   },
   output: 'export',

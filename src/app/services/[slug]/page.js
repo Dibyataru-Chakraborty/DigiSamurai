@@ -23,124 +23,75 @@ import WAZUH from "@/assets/logo/WAZUH.png";
 import ELASTIC from "@/assets/logo/ELASTIC.png";
 import CORTEX from "@/assets/logo/cortex.png";
 import HIVE from "@/assets/logo/HIVE.png";
+import { notFound } from "next/navigation";
+
+export const dynamicParams = false;
 
 const SERVICES = {
   security_partnership: {
     hero: {
-      title: "Our Services | Cyber Security",
+      title: "360° Security Partnership",
       heading: "Explore Our Comprehensive Cyber Security Services",
       broucher: "#",
       service_request: "#",
     },
     section_1: {
       heading: null,
-      points: [
-        
-      ]
+      points: [],
     },
     section_2: {
       heading: null,
-      services: [
-        // {
-        //   title: "",
-        //   description: "",
-        //   link: "#"
-        // }
-      ]
+      services: [],
     },
     section_3: {
-      heading1: "",
-      heading2: "",
-      sections: [
-        // {
-        //   heading: "",
-        //   items: [
-        //     {
-        //       name: "",
-        //       logo: ""
-        //     }
-        //   ]
-        // }
-      ]
-    }
+      heading1: null,
+      heading2: null,
+      sections: [],
+    },
   },
-  
+
   compliance_security: {
     hero: {
-      title: "Our Services | Cyber Security",
+      title: "Compliance Security",
       heading: "Explore Our Comprehensive Cyber Security Services",
       broucher: "#",
       service_request: "#",
     },
     section_1: {
       heading: null,
-      points: [
-      ]
+      points: [],
     },
     section_2: {
       heading: null,
-      services: [
-        // {
-        //   title: "",
-        //   description: "",
-        //   link: "#"
-        // }
-      ]
+      services: [],
     },
     section_3: {
-      heading1: "",
-      heading2: "",
-      sections: [
-        // {
-        //   heading: "",
-        //   items: [
-        //     {
-        //       name: "",
-        //       logo: ""
-        //     }
-        //   ]
-        // }
-      ]
-    }
+      heading1: null,
+      heading2: null,
+      sections: [],
+    },
   },
 
   capacity_building: {
     hero: {
-      title: "Our Services | Cyber Security",
+      title: "Capacity Building",
       heading: "Explore Our Comprehensive Cyber Security Services",
       broucher: "#",
       service_request: "#",
     },
     section_1: {
       heading: null,
-      points: [
-      ]
+      points: [],
     },
     section_2: {
       heading: null,
-      services: [
-        // {
-        //   title: "",
-        //   description: "",
-        //   link: "#"
-        // }
-      ]
+      services: [],
     },
     section_3: {
-      heading1: "",
-      heading2: "",
-      sections: [
-        // {
-        //   heading: "",
-        //   items: [
-        //     {
-        //       name: "",
-        //       logo: ""
-        //     }
-        //   ]
-        // }
-      ]
-    }
+      heading1: null,
+      heading2: null,
+      sections: [],
+    },
   },
 
   offensive_security: {
@@ -221,10 +172,6 @@ const SERVICES = {
           link: "#",
         },
       ],
-    },
-    section_3: {
-      heading1: "Compliances",
-      heading2: "Approach",
     },
     section_3: {
       sections: [
@@ -336,7 +283,13 @@ export async function generateStaticParams() {
 export default async function ServicePage({ params }) {
   const { slug } = await params;
 
-  const serviceData = SERVICES[slug]
+  const serviceData = SERVICES[slug];
+
+  console.log(slug);
+
+  if (!serviceData) {
+    notFound();
+  }
 
   return (
     <>

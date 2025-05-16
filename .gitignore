@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+event.json
+src/lib/getGalleryData.js
+src/memories.js
+/events

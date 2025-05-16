@@ -54,72 +54,75 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-[290px] md:min-h-[450px] lg:h-screen overflow-hidden text-white bg-[#010102]">
-      {/* Background Carousel */}
-      <Slider {...settings}>
-        {slides.map((slide, index) => {
-          const isLastTwo = index >= slides.length - 2;
-          return (
-            <div key={index}>
-              <div
-                // className="h-screen bg-cover bg-center flex items-center justify-center"
-                className="min-h-[200px] md:min-h[600px] lg:h-screen bg-contain md:bg-cover bg-center flex items-center justify-center"
-                style={{ backgroundImage: `url(${slide.image})` }}
-              >
+    <>
+      <section className="relative min-h-[350px] md:min-h-[650px] lg:h-screen overflow-hidden text-white bg-[#010102]">
+        {/* Background Carousel */}
+        <Slider {...settings}>
+          {slides.map((slide, index) => {
+            const isLastTwo = index >= slides.length - 2;
+            return (
+              <div key={index}>
                 <div
-                  className={`${
-                    isLastTwo
-                      ? "text-right xl:pl-[36rem] lg:pl-72 md:pl-60 pl-4 lg:w-5/6"
-                      : "text-start 2xl:pr-96 lg:pr-72 md:pr-60 pr-4 lg:w-5/6"
-                  } container px-4 sm:px-14`}
+                  className="min-h-[200px] md:min-h-[600px] lg:h-screen bg-cover bg-center flex items-center justify-center"
+                  style={{ backgroundImage: `url(${slide.image})` }}
                 >
-                  <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold font-[Josefin Sans]">
-                    {slide.title}
-                  </h1>
-                  <p
-                    className={`mt-6 text-sm sm:text-lg md:text-2xl lg:text-2xl font-[Josefin_Sans] ${
-                      isLastTwo ? "" : "max-w-3xl"
+                  <div
+                    className={`container px-4 sm:px-14 ${
+                      isLastTwo
+                        ? "text-right xl:pl-[36rem] lg:pl-72 md:pl-60 pl-4 lg:w-5/6"
+                        : "text-start 2xl:pr-96 lg:pr-72 md:pr-60 pr-4 lg:w-5/6"
                     }`}
                   >
-                    {slide.subtitle}
-                  </p>
+                    <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold font-[Josefin Sans]">
+                      {slide.title}
+                    </h1>
+                    <p
+                      className={`mt-4 text-sm sm:text-lg md:text-2xl font-[Josefin_Sans] ${
+                        isLastTwo ? "" : "max-w-3xl"
+                      }`}
+                    >
+                      {slide.subtitle}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
-      </Slider>
+            );
+          })}
+        </Slider>
 
-      {/* Certification Section Fixed at Bottom */}
-      <div className="absolute bottom-4 left-0 right-0 w-full flex flex-col items-center px-4 sm:px-8 z-10">
-        <div className="w-full sm:w-5/6 h-[2px] bg-white mb-3"></div>
-        <p className="text-xs sm:text-lg md:text-2xl font-[Josefin_Sans] mb-2">
-          We are certified by
-        </p>
-        <div className="pt-6 flex justify-between w-full max-w-6xl min-w-4xl">
-          {[iso27001, iso27701, iso22301, iso200001, iso9001, msme].map(
-            (logo, index) => {
-              const isMsme = logo === msme;
+        {/* Certification Section Fixed at Bottom */}
+        <div className="absolute bottom-4 left-0 right-0 w-full flex flex-col items-center px-4 sm:px-8 z-10">
+          <div className="w-full sm:w-5/6 h-[2px] bg-white mb-3"></div>
+          <p className="text-xs sm:text-lg md:text-2xl font-[Josefin_Sans] mb-2">
+            We are certified by
+          </p>
+          <div className="pt-6 flex justify-between w-full max-w-6xl min-w-4xl">
+            {[iso27001, iso27701, iso22301, iso200001, iso9001, msme].map(
+              (logo, index) => {
+                const isMsme = logo === msme;
 
-              const width = isMsme ? 120 : 67;
-              const height = isMsme ? 70 : 64;
+                const width = isMsme ? 120 : 67;
+                const height = isMsme ? 70 : 64;
 
-              return (
-                <div
-                  key={index}
-                  className={`relative w-[${width}px] h-[${height}px] flex items-center justify-center mx-2`}
-                >
-                  <Image
-                    src={logo}
-                    alt={`Certification ${index + 1}`}
-                    className="object-contain filter brightness-100 bg-white rounded-lg h-full"
-                  />
-                </div>
-              );
-            }
-          )}
+                return (
+                  <div
+                    key={index}
+                    className={`relative w-[${width}px] h-[${height}px] flex items-center justify-center mx-2`}
+                  >
+                    <Image
+                      src={logo}
+                      alt={`Certification ${index + 1}`}
+                      className="object-contain filter brightness-100 bg-white rounded-lg h-full"
+                      width={width}
+                      height={height}
+                    />
+                  </div>
+                );
+              }
+            )}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

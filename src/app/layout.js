@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import { Geist, Geist_Mono } from "next/font/google";
-import "@/styles/global.css";
+import "../styles/global.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -50,8 +50,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Tailwind CSS CDN (Not recommended in Next.js, use Tailwind properly via config) */}
-        <script src="https://cdn.tailwindcss.com" defer></script>
 
         {/* Font Awesome */}
         <link
