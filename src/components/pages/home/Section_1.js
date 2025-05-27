@@ -7,10 +7,10 @@ export default function Section_1() {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto text-left">
-        <div className="flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8 mx-16">
-          <div className="lg:w-1/2 w-full text-center lg:text-left">
+        <div className="flex flex-col xl:flex-row items-center justify-center space-y-8 xl:space-y-0 xl:space-x-8 mx-16">
+          <div className="xl:w-1/2 w-full text-center xl:text-left">
             <h2
-              className="text-3xl lg:text-6xl font-bold m"
+              className="text-3xl lg:text-6xl font-bold"
               style={{ fontFamily: "Josefin Sans" }}
             >
               Establishing new Benchmarks in Digital Protection
@@ -50,7 +50,7 @@ export default function Section_1() {
           </div>
           <Image
             alt="Team working on security solutions"
-            className="w-full md:w-1/2"
+            className="w-full lg:w-1/2 sm:w-3/4"
             src={illustration}
             width={400}
             height={300}

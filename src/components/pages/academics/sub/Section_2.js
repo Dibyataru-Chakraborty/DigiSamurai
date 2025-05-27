@@ -26,24 +26,24 @@ export default function Section_2({courses}) {
               >
                 <div className="flex-1">
                   <h2
-                    className="text-xl sm:text-2xl lg:text-6xl text-[#4a0a0a] mb-2 sm:mb-4"
+                    className="text-2xl sm:text-4xl lg:text-6xl text-[#4a0a0a] mb-2 sm:mb-4"
                     style={{ fontFamily: "Josefin Sans" }}
                   >
                     {course.title}
                   </h2>
 
-                  <p className="text-gray-900 text-sm sm:text-base lg:text-2xl font-[Jura] mb-4">
+                  <p className="text-gray-900 text-sm sm:text-xl lg:text-2xl font-[Jura] mb-4">
                     {course.description}
                   </p>
 
-                  <ul className="list-disc list-inside text-gray-900 text-sm sm:text-base lg:text-2xl font-[Jura] space-y-1 mb-6">
+                  <ul className="list-disc list-inside text-gray-900 text-sm sm:text-xl lg:text-2xl font-[Jura] space-y-1 mb-6">
                     {course.features.map((feature, fIndex) => (
                       <li key={fIndex}>{feature}</li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="xl:absolute top-4 right-6 text-sm sm:text-base lg:text-2xl text-gray-700 font-[Jura] xl:text-right">
+                <div className="xl:absolute top-4 right-6 text-sm sm:text-xl lg:text-2xl text-gray-700 font-[Jura] xl:text-right">
                   <p>Duration: {course.duration}</p>
                   <p>Level: {course.level}</p>
                 </div>

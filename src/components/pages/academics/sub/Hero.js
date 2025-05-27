@@ -1,6 +1,6 @@
 // components/Hero.js
 
-export default function Hero({title}) {
+export default function Hero({title, heading}) {
   
   return (
     <section
@@ -10,9 +10,12 @@ export default function Hero({title}) {
 
       {/* Content aligned to left with minimum margin */}
       <div className="absolute bottom-10 w-full flex flex-col container mx-auto justify-center items-start text-left text-white px-6 brightness-100">
-        <h1 className="lg:text-9xl text-5xl font-semibold font-[Josefin Sans]">
+        <h1 className="lg:text-9xl md:text-8xl text-7xl font-semibold font-[Josefin Sans]">
           {title}
         </h1>
+        <p className="text-2xl font-semibold mt-4">
+          {heading}
+        </p>
       </div>
     </section>
   );
