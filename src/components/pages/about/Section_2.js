@@ -1,8 +1,11 @@
+"use client";
 import ourmissionourvison from "@/assets/img/ourmissionourvison.png";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 export default function Section_2() {
+  const ref = useScrollReveal();
   return (
-    <section className="pb-16 bg-white">
+    <section ref={ref} className="pb-16 bg-white">
       <div className="container mx-auto px-8 py-16 lg:w-5/6">
         <div className="relative bg-cover bg-center rounded-[100px] lg:p-24 p-8 flex flex-col gap-16" style={{ backgroundImage: `url(${ourmissionourvison.src})` }}>
           <div

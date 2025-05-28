@@ -1,13 +1,15 @@
-// components/CardHoverEffectDemo.js
+"use client";
 import SouravSir from "@/assets/img/SouravSir.png";
 import PriyaMaam from "@/assets/img/PriyaMaam.png";
 import Image from "next/image";
 import LinkedinIcon from "@/assets/img/LinkedinIcon.png";
 import Link from "next/link";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 export default function Section_5() {
+  const ref = useScrollReveal();
   return (
-    <section className="pb-16 bg-white">
+    <section ref={ref} className="pb-16 bg-white">
       <div className="container mx-auto px-8 py-16 w-full  p-6">
         <div
           className="w-full h-[3px] mx-auto max-w-7xl"

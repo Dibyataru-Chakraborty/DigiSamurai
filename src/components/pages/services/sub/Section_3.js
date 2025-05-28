@@ -1,8 +1,11 @@
+"use client";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 import Image from "next/image";
 
 export default function Section_3({ sections = [] }) {
+  const ref = useScrollReveal();
   return (
-    <section className="bg-white">
+    <section ref={ref} className="bg-white">
       <div className="container mx-auto px-8 py-16 w-full p-6">
         {Array.isArray(sections) && sections.length > 0 ? (
           sections.map((block, index) => {

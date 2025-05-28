@@ -1,12 +1,15 @@
+"use client";
 import Image from "next/image";
 import Service_Customer_Service from "@/assets/logo/Service_Customer_Service.png";
 import Service_Content_Delivery from "@/assets/logo/Service_Content_Delivery.png";
 import Service_Malware from "@/assets/logo/Service_Malware.png";
 import Service_Web_Application from "@/assets/logo/Service_Web_Application.png";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 export default function Section_1() {
+  const ref = useScrollReveal()
   return (
-    <section className="pt-16 bg-white">
+    <section ref={ref} className="pt-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h2

@@ -1,10 +1,12 @@
-// components/Section_1.js
+"use client";
 import Image from "next/image";
 import illustration from "@/assets/img/About_Illustration.png";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 export default function Section_1() {
+  const ref = useScrollReveal()
   return (
-    <section className="pt-16 bg-white">
+    <section ref={ref} className="pt-16 bg-white">
       <div className="container mx-auto text-left lg:w-5/6">
         <div className="flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8 mx-16">
           <div className="lg:w-1/2 w-full text-center lg:text-left">

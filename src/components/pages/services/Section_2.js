@@ -1,39 +1,45 @@
-// components/CardHoverEffectDemo.js
-import academicscourses from "@/assets/img/academicscourses.png";
+"use client";
+import securitypartnership from "@/assets/img/360securitypartnership.png";
+import capacitybuilding from "@/assets/img/capacitybuilding.png";
+import compliancesecurity from "@/assets/img/compliancesecurity.png";
+import defensivesecurity from "@/assets/img/defensivesecurity.png";
+import offensivesecurity from "@/assets/img/offensivesecurity.png";
 import Image from "next/image";
 import Link from "next/link";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 const services = [
   {
     title: "360° Security Partnership",
-    image: academicscourses, // Your imported image
+    image: securitypartnership, // Your imported image
     brochureLink: "/services/security_partnership",
   },
   {
     title: "Compliance Security",
-    image: academicscourses,
+    image: compliancesecurity,
     brochureLink: "/services/compliance_security",
   },
   {
     title: "Offensive Security",
-    image: academicscourses,
+    image: offensivesecurity,
     brochureLink: "/services/offensive_security",
   },
   {
     title: "Defensive Security",
-    image: academicscourses,
+    image: defensivesecurity,
     brochureLink: "/services/defensive_security",
   },
   {
     title: "Capacity Building",
-    image: academicscourses,
+    image: capacitybuilding,
     brochureLink: "/services/capacity_building",
   }, 
 ];
 
 export default function Section_2() {
+  const ref = useScrollReveal();
   return (
-    <section className="pb-16 bg-white">
+    <section ref={ref} className="pb-16 bg-white">
       <div className="container mx-auto px-8 py-16 w-full  p-6">
         <div
           className="w-full h-[3px] mx-auto max-w-7xl"

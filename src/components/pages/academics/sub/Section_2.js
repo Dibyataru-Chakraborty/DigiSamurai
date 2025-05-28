@@ -1,9 +1,11 @@
+"use client";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 import Link from "next/link";
 
 export default function Section_2({courses}) {
-
+  const ref = useScrollReveal()
   return (
-    <section className="pt-16 bg-white">
+    <section ref={ref} className="pt-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="py-10 text-center">
           <h2

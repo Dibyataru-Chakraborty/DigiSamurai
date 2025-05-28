@@ -1,15 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import gsap from "gsap";
 
 export default function Section_1() {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const formRef = useRef(null);
+  const successRef = useRef(null);
 
-    const form = event.target;
+  const handleSubmit = async (e) => {
+    const success_toast = document.getElementById("toast-success");
+    const erro_toast = document.getElementById("toast-dangers");
+
+    e.preventDefault();
+
+    const form = e.target;
     const formData = new FormData(form);
 
     try {
@@ -25,27 +32,52 @@ export default function Section_1() {
       setSubmitted(true);
       form.reset();
 
-      // Show success toast
-      document.getElementById("toast-success").style.display = "flex";
+      // Animate form out, show success
+      gsap.timeline().to(formRef.current, {
+        opacity: 0,
+        y: -20,
+        duration: 0.5,
+        ease: "power3.out",
+        onComplete: () => {
+          gsap.fromTo(
+            successRef.current,
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 0.8, ease: "bounce.out" }
+          );
+          success_toast.style.display = "flex";
+        },
+      });
+
       setTimeout(() => {
-        document.getElementById("toast-success").style.display = "none";
-      }, 3000); // hide after 3 seconds
+        success_toast.style.display = "none";
+
+        gsap.timeline().to(successRef.current, {
+          opacity: 0,
+          y: 20,
+          duration: 0.5,
+          ease: "power3.in",
+          onComplete: () => {
+            setSubmitted(false);
+          },
+        });
+      }, 3000);
     } catch (error) {
       console.error("Form submission error:", error);
 
       // Show error toast
-      document.getElementById("toast-danger").style.display = "flex";
+      erro_toast.style.display = "flex";
       setTimeout(() => {
-        document.getElementById("toast-danger").style.display = "none";
+        erro_toast.style.display = "none";
       }, 3000);
     }
   };
 
   return (
     <section className="py-16 bg-white flex flex-col items-center justify-center text-center">
+      {/* success */}
       <div
         id="toast-success"
-        className="flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800"
+        className="flex items-center max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800"
         role="alert"
         style={{ display: "none" }}
       >
@@ -65,8 +97,10 @@ export default function Section_1() {
         <button
           type="button"
           className="ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
-          data-dismiss-target="#toast-success"
           aria-label="Close"
+          onClick={() =>
+            (document.getElementById("toast-success").style.display = "none")
+          }
         >
           <span className="sr-only">Close</span>
           <svg
@@ -86,9 +120,10 @@ export default function Section_1() {
           </svg>
         </button>
       </div>
+      {/* on failed */}
       <div
         id="toast-danger"
-        className="flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800"
+        className="flex items-center max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800 z-10"
         role="alert"
         style={{ display: "none" }}
       >
@@ -110,8 +145,10 @@ export default function Section_1() {
         <button
           type="button"
           className="ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
-          data-dismiss-target="#toast-danger"
           aria-label="Close"
+          onClick={() =>
+            (document.getElementById("toast-danger").style.display = "none")
+          }
         >
           <span className="sr-only">Close</span>
           <svg
@@ -131,6 +168,7 @@ export default function Section_1() {
           </svg>
         </button>
       </div>
+
       <div className="container mx-auto w-full lg:w-5/6">
         <h2 className="xl:text-6xl text-4xl font-bold ">
           <span
@@ -198,65 +236,80 @@ export default function Section_1() {
           {/* Right side content */}
           <div className="flex flex-col gap-6 md:w-1/2 lg:mx-auto md:mx-0">
             {/* Form section with border */}
-            <section className="flex flex-col gap-6 border-2 border-gray-300 rounded-3xl p-8">
-              <form
-                className="flex flex-col gap-4 text-start lg:min-h-[400] overflow-auto"
-                onSubmit={handleSubmit}
-              >
-                <label className="text-lg font-normal" htmlFor="name">
-                  Name
-                </label>
-                <input
-                  name="entry.1630859055"
-                  required
-                  id="name"
-                  type="text"
-                  placeholder="john Doe"
-                  className="border border-gray-300 rounded-md px-3 py-2 text-lg placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-red-600"
-                />
-                <label className="text-lg font-normal" htmlFor="email">
-                  Email
-                </label>
-                <input
-                  name="entry.1134503459"
-                  required
-                  id="email"
-                  type="email"
-                  placeholder="example@gmail.com"
-                  className="border border-gray-300 rounded-md px-3 py-2 text-lg placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-red-600"
-                />
-                <label className="text-lg font-normal" htmlFor="phone">
-                  Phone Number
-                </label>
-                <input
-                  name="entry.979963924"
-                  required
-                  id="phone"
-                  type="tel"
-                  minLength={10}
-                  maxLength={10}
-                  placeholder="+91 1234567890"
-                  className="border border-gray-300 rounded-md px-3 py-2 text-lg placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-red-600"
-                />
-                <label className="text-lg font-normal" htmlFor="message">
-                  Message
-                </label>
-                <textarea
-                  name="entry.787586561"
-                  required
-                  id="message"
-                  placeholder="Message"
-                  type="text"
-                  className="resize-y border border-gray-300 rounded-md px-3 py-2 text-lg placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-red-600 overflow-hidden"
-                />
-                <button
-                  type="submit"
-                  className="bg-red-600 text-white text-lg rounded-md py-2 mt-1"
+
+            <div className="flex flex-col gap-6 border-2 border-gray-300 rounded-3xl p-8">
+              {!submitted ? (
+                <form
+                  ref={formRef}
+                  onSubmit={handleSubmit}
+                  className="flex flex-col gap-4 text-start transition-opacity duration-500 lg:min-h-[400] overflow-auto"
                 >
-                  Submit
-                </button>
-              </form>
-            </section>
+                  <label htmlFor="name" className="text-lg font-semibold">
+                    Name
+                  </label>
+                  <input
+                    name="entry.1630859055"
+                    required
+                    id="name"
+                    type="text"
+                    placeholder="John Doe"
+                    className="border border-gray-300 rounded-md px-3 py-2 text-lg placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-red-600"
+                  />
+
+                  <label htmlFor="email" className="text-lg font-semibold">
+                    Email
+                  </label>
+                  <input
+                    name="entry.1134503459"
+                    required
+                    id="email"
+                    type="email"
+                    placeholder="example@gmail.com"
+                    className="border border-gray-300 rounded-md px-3 py-2 text-lg placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-red-600"
+                  />
+
+                  <label htmlFor="phone" className="text-lg font-semibold">
+                    Phone Number
+                  </label>
+                  <input
+                    name="entry.979963924"
+                    required
+                    id="phone"
+                    type="tel"
+                    minLength={10}
+                    maxLength={10}
+                    placeholder="+91 1234567890"
+                    className="border border-gray-300 rounded-md px-3 py-2 text-lg placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-red-600"
+                  />
+
+                  <label htmlFor="message" className="text-lg font-semibold">
+                    Message
+                  </label>
+                  <textarea
+                    name="entry.787586561"
+                    required
+                    id="message"
+                    placeholder="Message"
+                    type="text"
+                    className="resize-y border border-gray-300 rounded-md px-3 py-2 text-lg placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-red-600 overflow-hidden"
+                  />
+
+                  <button
+                    type="submit"
+                    className="bg-red-600 text-white text-lg font-medium rounded-md py-2 mt-2 hover:bg-red-700 active:scale-95 transition-transform duration-200 shadow-md"
+                  >
+                    Submit
+                  </button>
+                </form>
+              ) : (
+                <div
+                  ref={successRef}
+                  className="text-center text-green-600 text-xl font-semibold opacity-0 transition-opacity duration-500"
+                >
+                  Thank you! Your message has been submitted 🎉
+                </div>
+              )}
+            </div>
 
             {/* Map placeholder outside the border */}
             <div

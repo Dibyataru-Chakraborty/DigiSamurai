@@ -1,10 +1,13 @@
+"use client";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 import team from "@/assets/img/team.png";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Section_4() {
+  const ref = useScrollReveal();
   return (
-    <section className="pb-16 bg-white">
+    <section ref={ref} className="pb-16 bg-white">
       <div className="max-w-7xl px-10 mx-auto rounded-xl overflow-hidden">
         <div className="flex flex-col md:flex-row rounded-xl overflow-hidden">
           <div className="md:w-1/2 bg-[rgb(155,127,127)] bg-opacity-80 p-10 flex flex-col items-center justify-center rounded-t-xl md:rounded-l-xl md:rounded-tr-none">

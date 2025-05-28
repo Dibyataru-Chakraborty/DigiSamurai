@@ -1,12 +1,15 @@
-// components/Section_2.js
+"use client";
 import Image from "next/image";
 import CorporateTraining from "@/assets/img/CorporateTraining.png";
 import AcademicTraining from "@/assets/img/AcademicTraining.png";
 import SecurityConsultancySolutions from "@/assets/img/SecurityConsultancySolutions.png";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 export default function Section_2() {
+  const ref = useScrollReveal();
+
   return (
-    <section className="py-16 bg-white flex flex-col items-center justify-center text-center">
+    <section ref={ref} className="py-16 bg-white flex flex-col items-center justify-center text-center">
       <div className="container mx-auto">
         <h2
           className="text-6xl font-bold bg-clip-text text-transparent"

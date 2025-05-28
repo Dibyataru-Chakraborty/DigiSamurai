@@ -1,13 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Section_1({ eventData }) {
-
   const currentYear = new Date().getFullYear();
   const [selectedYear, setSelectedYear] = useState(currentYear);
 
+  // Get selected year's events
   const selectedYearGroup = eventData.find(
     (group) => String(group.year) === String(selectedYear)
   );
@@ -20,6 +24,48 @@ export default function Section_1({ eventData }) {
         }))
       )
     : [];
+
+  const containerRef = useRef([]);
+  if (containerRef.current.length !== flatEvents.length) {
+    containerRef.current = new Array(flatEvents.length);
+  }
+
+  useEffect(() => {
+    ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    //   if (ref) {
+    //     gsap.from(ref, {
+    //       opacity: 0,
+    //       y: 50,
+    //       duration: 1,
+    //       ease: "power3.out",
+    //       scrollTrigger: {
+    //         trigger: ref,
+    //         start: "top 80%",
+    //         toggleActions: "play reverse play reverse",
+    //       },
+    //     });
+    //   }
+    // });
+
+    containerRef.current.forEach((ref) => { 
+      if (ref) {
+      // Set initial state first
+      gsap.set(ref, { opacity: 0, y: 50 });
+
+      gsap.to(ref, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ref,
+          start: "top 80%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+    }
+  });
+  }, [flatEvents]);
 
   return (
     <section className="pt-7 bg-white">
@@ -44,9 +90,10 @@ export default function Section_1({ eventData }) {
 
         {/* Filtered Events */}
         {flatEvents && flatEvents.length > 0 ? (
-          <div>
+          <>
             {flatEvents.map((event, eventIndex) => (
               <div
+                ref={(el) => (containerRef.current[eventIndex] = el)}
                 key={eventIndex}
                 className="border-b border-gray-300 px-6 pt-6 pb-8"
               >
@@ -69,7 +116,9 @@ export default function Section_1({ eventData }) {
                     <p>{event.description}</p>
                   </div>
                   <div
-                    className={`w-full ${event.image.length > 1 ? "overflow-x-auto" : ""} overflow-y-hidden no-scrollbar`}
+                    className={`w-full ${
+                      event.image.length > 1 ? "overflow-x-auto" : ""
+                    } overflow-y-hidden no-scrollbar`}
                   >
                     <div
                       className={`flex items-center gap-6 ${
@@ -91,7 +140,7 @@ export default function Section_1({ eventData }) {
                 </div>
               </div>
             ))}
-          </div>
+          </>
         ) : (
           <div className="text-center lg:text-5xl text-4xl font-semibold text-gray-500 py-8 w-full">
             🚧 Coming Soon 🚧

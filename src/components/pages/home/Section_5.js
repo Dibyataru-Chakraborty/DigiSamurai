@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
+import { useScrollReveal } from "@/lib/useScrollReveal";
 export default function Section_5() {
   const testimonials = [
     {
@@ -52,9 +52,11 @@ export default function Section_5() {
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, [testimonials.length]);
+  
+  const ref = useScrollReveal();
 
   return (
-    <section className="py-16 relative bg-white">
+    <section ref={ref} className="py-16 relative bg-white">
       <div className="container mx-auto text-center space-y-16 lg:w-5/6">
         {/* Static content */}
         <div className="flex flex-col md:flex-row md:items-start md:space-x-8 text-left">

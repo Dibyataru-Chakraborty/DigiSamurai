@@ -1,4 +1,5 @@
-// components/CardHoverEffectDemo.js
+"use client";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 import academicscourses from "@/assets/img/academicscourses.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,8 +18,9 @@ const courses = [
 ];
 
 export default function Section_2() {
+  const ref = useScrollReveal();
   return (
-    <section className="pb-16 bg-white">
+    <section ref={ref} className="pb-16 bg-white">
       <div className="container mx-auto px-8 py-16 w-full  p-6">
         <div
           className="w-full h-[3px] mx-auto max-w-7xl"

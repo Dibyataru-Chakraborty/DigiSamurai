@@ -1,6 +1,9 @@
+"use client";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 export default function Section_1({ points, heading }) {
+  const ref = useScrollReveal();
   return (
-    <section className="pt-16 bg-white">
+    <section ref={ref} className="pt-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h2

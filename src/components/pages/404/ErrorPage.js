@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import dynamic from "next/dynamic";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 const World = dynamic(() => import("../../ui/globe").then((m) => m.World), {
   ssr: false,
@@ -394,8 +395,10 @@ export function ErrorPage() {
     },
   ];
 
+  const ref = useScrollReveal();
+
   return (
-    <div className="flex flex-row items-center justify-center py-40 lg:py-44 h-screen bg-black relative w-full">
+    <div ref={ref} className="flex flex-row items-center justify-center py-40 lg:py-44 h-screen bg-black relative w-full">
       <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full px-4">
         <motion.div
           initial={{

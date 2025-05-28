@@ -1,6 +1,7 @@
-"use client"
+"use client";
 
-import CountUp from 'react-countup';
+import CountUp from "react-countup";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 export default function Section_4() {
   const stats = [
@@ -10,8 +11,10 @@ export default function Section_4() {
     { value: 150, suffix: "%", label: "Customer retention" },
   ];
 
+  const ref = useScrollReveal();
+
   return (
-    <section className="py-16 relative bg-white">
+    <section ref={ref} className="py-16 relative bg-white">
       <div
         className="container mx-auto flex flex-col lg:w-5/6 text-center items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8"
         style={{
@@ -34,7 +37,10 @@ export default function Section_4() {
               className={`px-4 ${index !== stats.length - 1 ? "lg:border-r lg:border-black" : ""}`}
             >
               <div className="my-8">
-                <div className="text-5xl md:font-bold"><CountUp end={stat.value}/>{stat.suffix}</div>
+                <div className="text-5xl md:font-bold">
+                  <CountUp end={stat.value}/>
+                  {stat.suffix}
+                </div>
                 <div className="text-3xl">{stat.label}</div>
               </div>
             </div>

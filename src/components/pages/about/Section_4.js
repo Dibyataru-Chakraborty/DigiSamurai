@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import ISO_27001_2022 from "@/assets/Certificate/ISO-27001-2022.jpg";
 import ISO_9001_2015 from "@/assets/Certificate/ISO-9001-2015.jpg";
@@ -23,6 +24,8 @@ import webel from "@/assets/logo/webel.png";
 import gkbopticals from "@/assets/logo/gkbopticals.png";
 import peerless from "@/assets/logo/peerless.png";
 import kolkatapolice from "@/assets/logo/kolkatapolice.png";
+
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 export default function Section_4() {
   const certificates = [
@@ -122,8 +125,10 @@ export default function Section_4() {
     },
   ];
 
+  const ref = useScrollReveal();
+
   return (
-    <section className="bg-white">
+    <section ref={ref} className="bg-white">
       <div className="container mx-auto px-8 py-16 w-full p-6 lg:w-5/6">
         {/* Company Certifications Section */}
         <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between gap-6 md:gap-20 mb-12">

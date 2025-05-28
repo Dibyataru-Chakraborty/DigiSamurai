@@ -1,8 +1,10 @@
-// // components/Section_3.js
+"use client";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 export default function Section_3() {
+  const ref = useScrollReveal();
   return (
-    <section className="py-16 bg-white">
+    <section ref={ref} className="py-16 bg-white">
       <div className="container mx-auto flex flex-col lg:w-5/6 lg:text-left font-bold ">
         <div
           className="w-full h-[3px]"
